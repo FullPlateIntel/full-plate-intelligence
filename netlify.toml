@@ -1,0 +1,10 @@
+# Full Plate Intelligence — Netlify configuration
+# Static single-page site + one serverless function for Kit signups.
+
+[build]
+  # The site is a plain static index.html at the repo root — no build step.
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
