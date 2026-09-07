@@ -1,0 +1,57 @@
+
+/* ============================================================================
+   RC1/RC3 accessibility + form additions, appended after the approved stylesheet.
+   Colour: the approved design tokens are used unchanged everywhere (brand orange #F26A21,
+   deep orange #D9531E, gold #D8A441; primary buttons #F26A21 with white labels), exactly as in
+   the reference file. The RC1/RC2 darkened "accessible" text/label shades were withdrawn at the
+   owner's direction on 2026-09-07; the resulting WCAG 1.4.3 contrast gaps are recorded as an
+   accepted, owner-approved brand deviation in docs/AUDIT_AND_FIXES.md (B9) and TEST_RESULTS.md.
+   ============================================================================ */
+:root{
+  --fpi-focus:#355E3B;
+}
+/* signup-msg is now the error/status regions below */
+.signup-error{font-family:'Caveat',cursive;font-size:20px;font-weight:600;color:var(--fpi-orange-deep);flex:1 1 100%;margin:0;}
+.signup-error[hidden]{display:none;}
+.signup-status{font-family:'Caveat',cursive;font-size:22px;font-weight:600;color:var(--fpi-green);flex:1 1 100%;margin:0;line-height:1.25;}
+.signup-status:empty{display:none;}
+.signup-status-help{flex:1 1 100%;font-size:14px;line-height:1.4;color:var(--fpi-muted-ink);margin:0;}
+.signup-status-help[hidden]{display:none;}
+.signup.is-done > label,.signup.is-done > input,.signup.is-done > button,.signup.is-done > .hp{display:none;}
+.signup.is-done{align-items:center;}
+.signup.is-busy button{opacity:.75;cursor:progress;}
+.signup input[aria-invalid="true"]{border-color:var(--fpi-orange-deep);box-shadow:2.5px 2.5px 0 var(--fpi-orange-deep);}
+.signup .signup-help{flex:1 1 100%;font-size:14px;line-height:1.4;color:var(--fpi-muted-ink);margin:0;}
+.signup.is-done > .signup-help{display:none;}
+/* honeypot: off-screen, not display:none */
+.hp{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+.skip-link{position:absolute;left:12px;top:-60px;z-index:100;padding:10px 16px;background:var(--fpi-ink);color:#fff;font-family:'Patrick Hand',cursive;font-size:17px;border-radius:8px;text-decoration:none;}
+.skip-link:focus{top:12px;outline:3px solid var(--fpi-focus);outline-offset:2px;}
+main:focus{outline:none;}
+:focus-visible{outline:3px solid var(--fpi-focus);outline-offset:3px;}
+.nav-item:focus-visible,.btn:focus-visible,.rii-btn:focus-visible,.bm-btn:focus-visible{outline:3px solid var(--fpi-focus);outline-offset:4px;}
+/* the illustrative cost example on the homepage */
+.plate-disclaimer{font-size:13.5px;line-height:1.45;color:var(--fpi-muted-ink);text-align:right;margin:8px 0 0;padding-right:24px;}
+@media (max-width:900px){.plate-disclaimer{text-align:center;padding-right:0;}}
+/* founder identity line */
+.ms-identity{font-size:17px;line-height:1.5;color:var(--fpi-muted-ink);margin:6px 0 4px;}
+/* every <img> now carries width/height attributes; where the approved CSS sets only a width, keep the aspect ratio */
+img{height:auto;}
+/* motion */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *,*::before,*::after{transition-duration:.01ms !important;animation-duration:.01ms !important;animation-iteration-count:1 !important;}
+}
+/* responsive robustness (verified failures: fallback fonts on Steve at 901/1024px, contact e-mail at 320px,
+   social icon links below the 24px target minimum). Grid tracks use minmax(0,1fr) so long unbreakable
+   words cannot force the page wider than the viewport. */
+@media (min-width:901px){
+  .founder-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);}
+  .ms-three{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr) minmax(0,1fr);}
+  .stickies{grid-template-columns:repeat(5,minmax(0,1fr));}
+}
+@media (max-width:1100px){.ms-h{white-space:normal;}}
+.contact-email{overflow-wrap:anywhere;}
+@media (max-width:360px){.contact-email{font-size:26px;}}
+.follow-mini a{display:inline-flex;align-items:center;justify-content:center;min-width:24px;min-height:24px;}

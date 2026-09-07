@@ -1,0 +1,12 @@
+# Netlify: clean URLs are native; unknown paths fall through to the 404 page with a real 404 status.
+# Trailing-slash canonical: redirect the bare path to the slash form (Netlify does this by default with "Pretty URLs"; keep both rules explicit).
+/show            /show/            301
+/weekly          /weekly/          301
+/restaurant-intelligence-index /restaurant-intelligence-index/ 301
+/benchmark       /benchmark/       301
+/steve           /steve/           301
+/privacy         /privacy/         301
+/terms           /terms/           301
+/contact         /contact/         301
+/index.html      /                 301
+/*               /404.html         404

@@ -1,0 +1,3978 @@
+{
+ "run_at": "2026-09-07T17:47:37.283902+00:00",
+ "seconds": 187.7,
+ "environment": {
+  "python": "3.11.15",
+  "node": "v22.22.2",
+  "playwright_chromium": "bundled",
+  "server": "tests/serve.py + server/dev-server.mjs + server/mock-kit.mjs (local, no network)"
+ },
+ "summary": {
+  "PASS": 623,
+  "FAIL": 0,
+  "INFO": 37,
+  "NOT_TESTED": 0
+ },
+ "results": [
+  {
+   "group": "assets",
+   "name": "99 extracted images match manifest sha256 and are byte-identical to the original data URIs",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "assets",
+   "name": "unique payload count matches baseline (99)",
+   "status": "PASS",
+   "evidence": "99"
+  },
+  {
+   "group": "html",
+   "name": "/ size 33 KB under the 200 KB budget",
+   "status": "PASS",
+   "evidence": "34203"
+  },
+  {
+   "group": "html",
+   "name": "/ has exactly one <h1>",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "/ has <main id=\"main\"> and a skip link",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/ canonical is absolute on the production origin",
+   "status": "PASS",
+   "evidence": "https://fullplateintel.com/"
+  },
+  {
+   "group": "html",
+   "name": "/ has og:url, og:image (absolute), twitter:card, description",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/ has no base64 raster data URIs left inline",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/ contains no em dashes or TODO markers",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/ has no inline style attributes (CSP style-src self)",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "seo",
+   "name": "/ JSON-LD parses",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "assets",
+   "name": "/ all referenced /assets files exist",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "links",
+   "name": "/ internal links resolve",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "perf",
+   "name": "/ every <img> has width and height (26 images)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "perf",
+   "name": "/ at most one fetchpriority=high image (the hero) and it is not lazy",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "/weekly/ size 28 KB under the 200 KB budget",
+   "status": "PASS",
+   "evidence": "28973"
+  },
+  {
+   "group": "html",
+   "name": "/weekly/ has exactly one <h1>",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "/weekly/ has <main id=\"main\"> and a skip link",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/weekly/ canonical is absolute on the production origin",
+   "status": "PASS",
+   "evidence": "https://fullplateintel.com/weekly/"
+  },
+  {
+   "group": "html",
+   "name": "/weekly/ has og:url, og:image (absolute), twitter:card, description",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/weekly/ has no base64 raster data URIs left inline",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/weekly/ contains no em dashes or TODO markers",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/weekly/ has no inline style attributes (CSP style-src self)",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "seo",
+   "name": "/weekly/ JSON-LD parses",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "assets",
+   "name": "/weekly/ all referenced /assets files exist",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "links",
+   "name": "/weekly/ internal links resolve",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "perf",
+   "name": "/weekly/ every <img> has width and height (25 images)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "perf",
+   "name": "/weekly/ at most one fetchpriority=high image (the hero) and it is not lazy",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "/show/ size 28 KB under the 200 KB budget",
+   "status": "PASS",
+   "evidence": "28405"
+  },
+  {
+   "group": "html",
+   "name": "/show/ has exactly one <h1>",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "/show/ has <main id=\"main\"> and a skip link",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/show/ canonical is absolute on the production origin",
+   "status": "PASS",
+   "evidence": "https://fullplateintel.com/show/"
+  },
+  {
+   "group": "html",
+   "name": "/show/ has og:url, og:image (absolute), twitter:card, description",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/show/ has no base64 raster data URIs left inline",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/show/ contains no em dashes or TODO markers",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/show/ has no inline style attributes (CSP style-src self)",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "seo",
+   "name": "/show/ JSON-LD parses",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "assets",
+   "name": "/show/ all referenced /assets files exist",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "links",
+   "name": "/show/ internal links resolve",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "perf",
+   "name": "/show/ every <img> has width and height (22 images)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "perf",
+   "name": "/show/ at most one fetchpriority=high image (the hero) and it is not lazy",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "/restaurant-intelligence-index/ size 37 KB under the 200 KB budget",
+   "status": "PASS",
+   "evidence": "37500"
+  },
+  {
+   "group": "html",
+   "name": "/restaurant-intelligence-index/ has exactly one <h1>",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "/restaurant-intelligence-index/ has <main id=\"main\"> and a skip link",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/restaurant-intelligence-index/ canonical is absolute on the production origin",
+   "status": "PASS",
+   "evidence": "https://fullplateintel.com/restaurant-intelligence-index/"
+  },
+  {
+   "group": "html",
+   "name": "/restaurant-intelligence-index/ has og:url, og:image (absolute), twitter:card, description",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/restaurant-intelligence-index/ has no base64 raster data URIs left inline",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/restaurant-intelligence-index/ contains no em dashes or TODO markers",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/restaurant-intelligence-index/ has no inline style attributes (CSP style-src self)",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "seo",
+   "name": "/restaurant-intelligence-index/ JSON-LD parses",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "assets",
+   "name": "/restaurant-intelligence-index/ all referenced /assets files exist",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "links",
+   "name": "/restaurant-intelligence-index/ internal links resolve",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "perf",
+   "name": "/restaurant-intelligence-index/ every <img> has width and height (31 images)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "perf",
+   "name": "/restaurant-intelligence-index/ at most one fetchpriority=high image (the hero) and it is not lazy",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "/benchmark/ size 44 KB under the 200 KB budget",
+   "status": "PASS",
+   "evidence": "45077"
+  },
+  {
+   "group": "html",
+   "name": "/benchmark/ has exactly one <h1>",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "/benchmark/ has <main id=\"main\"> and a skip link",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/benchmark/ canonical is absolute on the production origin",
+   "status": "PASS",
+   "evidence": "https://fullplateintel.com/benchmark/"
+  },
+  {
+   "group": "html",
+   "name": "/benchmark/ has og:url, og:image (absolute), twitter:card, description",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/benchmark/ has no base64 raster data URIs left inline",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/benchmark/ contains no em dashes or TODO markers",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/benchmark/ has no inline style attributes (CSP style-src self)",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "seo",
+   "name": "/benchmark/ JSON-LD parses",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "assets",
+   "name": "/benchmark/ all referenced /assets files exist",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "links",
+   "name": "/benchmark/ internal links resolve",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "perf",
+   "name": "/benchmark/ every <img> has width and height (37 images)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "perf",
+   "name": "/benchmark/ at most one fetchpriority=high image (the hero) and it is not lazy",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "/steve/ size 30 KB under the 200 KB budget",
+   "status": "PASS",
+   "evidence": "30428"
+  },
+  {
+   "group": "html",
+   "name": "/steve/ has exactly one <h1>",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "/steve/ has <main id=\"main\"> and a skip link",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/steve/ canonical is absolute on the production origin",
+   "status": "PASS",
+   "evidence": "https://fullplateintel.com/steve/"
+  },
+  {
+   "group": "html",
+   "name": "/steve/ has og:url, og:image (absolute), twitter:card, description",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/steve/ has no base64 raster data URIs left inline",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/steve/ contains no em dashes or TODO markers",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/steve/ has no inline style attributes (CSP style-src self)",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "seo",
+   "name": "/steve/ JSON-LD parses",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "assets",
+   "name": "/steve/ all referenced /assets files exist",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "links",
+   "name": "/steve/ internal links resolve",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "perf",
+   "name": "/steve/ every <img> has width and height (18 images)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "perf",
+   "name": "/steve/ at most one fetchpriority=high image (the hero) and it is not lazy",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "/privacy/ size 25 KB under the 200 KB budget",
+   "status": "PASS",
+   "evidence": "25777"
+  },
+  {
+   "group": "html",
+   "name": "/privacy/ has exactly one <h1>",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "/privacy/ has <main id=\"main\"> and a skip link",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/privacy/ canonical is absolute on the production origin",
+   "status": "PASS",
+   "evidence": "https://fullplateintel.com/privacy/"
+  },
+  {
+   "group": "html",
+   "name": "/privacy/ has og:url, og:image (absolute), twitter:card, description",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/privacy/ has no base64 raster data URIs left inline",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/privacy/ contains no em dashes or TODO markers",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/privacy/ has no inline style attributes (CSP style-src self)",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "seo",
+   "name": "/privacy/ JSON-LD parses",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "assets",
+   "name": "/privacy/ all referenced /assets files exist",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "links",
+   "name": "/privacy/ internal links resolve",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "perf",
+   "name": "/privacy/ every <img> has width and height (10 images)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "perf",
+   "name": "/privacy/ at most one fetchpriority=high image (the hero) and it is not lazy",
+   "status": "PASS",
+   "evidence": "0"
+  },
+  {
+   "group": "html",
+   "name": "/terms/ size 23 KB under the 200 KB budget",
+   "status": "PASS",
+   "evidence": "23686"
+  },
+  {
+   "group": "html",
+   "name": "/terms/ has exactly one <h1>",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "/terms/ has <main id=\"main\"> and a skip link",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/terms/ canonical is absolute on the production origin",
+   "status": "PASS",
+   "evidence": "https://fullplateintel.com/terms/"
+  },
+  {
+   "group": "html",
+   "name": "/terms/ has og:url, og:image (absolute), twitter:card, description",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/terms/ has no base64 raster data URIs left inline",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/terms/ contains no em dashes or TODO markers",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/terms/ has no inline style attributes (CSP style-src self)",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "seo",
+   "name": "/terms/ JSON-LD parses",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "assets",
+   "name": "/terms/ all referenced /assets files exist",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "links",
+   "name": "/terms/ internal links resolve",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "perf",
+   "name": "/terms/ every <img> has width and height (10 images)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "perf",
+   "name": "/terms/ at most one fetchpriority=high image (the hero) and it is not lazy",
+   "status": "PASS",
+   "evidence": "0"
+  },
+  {
+   "group": "html",
+   "name": "/contact/ size 21 KB under the 200 KB budget",
+   "status": "PASS",
+   "evidence": "21538"
+  },
+  {
+   "group": "html",
+   "name": "/contact/ has exactly one <h1>",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "/contact/ has <main id=\"main\"> and a skip link",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/contact/ canonical is absolute on the production origin",
+   "status": "PASS",
+   "evidence": "https://fullplateintel.com/contact/"
+  },
+  {
+   "group": "html",
+   "name": "/contact/ has og:url, og:image (absolute), twitter:card, description",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/contact/ has no base64 raster data URIs left inline",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/contact/ contains no em dashes or TODO markers",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "html",
+   "name": "/contact/ has no inline style attributes (CSP style-src self)",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "seo",
+   "name": "/contact/ JSON-LD parses",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "assets",
+   "name": "/contact/ all referenced /assets files exist",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "links",
+   "name": "/contact/ internal links resolve",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "perf",
+   "name": "/contact/ every <img> has width and height (10 images)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "perf",
+   "name": "/contact/ at most one fetchpriority=high image (the hero) and it is not lazy",
+   "status": "PASS",
+   "evidence": "0"
+  },
+  {
+   "group": "seo",
+   "name": "all nine titles are distinct",
+   "status": "PASS",
+   "evidence": "{'Full Plate Weekly | Free Restaurant Financial Newsletter', 'The Full Plate Show | Restaurant Business Conversations', 'Contact | Full Plate Intelligence', 'Full Plate Intelligence | Restaurant Financial Insights for Independent Restaurants', 'Restaurant Intelligence Index | Independent Restaurant Industry Report', 'Steve Dillberg | Founder of Full Plate Intelligence', 'Full Plate Benchmark | Restaurant Financial Benchmarking', 'Terms of Use | Full Plate Intelligence', 'Privacy Policy | Full Plate Intelligence'}"
+  },
+  {
+   "group": "html",
+   "name": "404.html carries exactly one id=\"fpi-config\" block",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "benchmark/index.html carries exactly one id=\"fpi-config\" block",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "contact/index.html carries exactly one id=\"fpi-config\" block",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "index.html carries exactly one id=\"fpi-config\" block",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "privacy/index.html carries exactly one id=\"fpi-config\" block",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "restaurant-intelligence-index/index.html carries exactly one id=\"fpi-config\" block",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "show/index.html carries exactly one id=\"fpi-config\" block",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "steve/index.html carries exactly one id=\"fpi-config\" block",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "subscribe/error/index.html carries exactly one id=\"fpi-config\" block",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "subscribe/thanks/index.html carries exactly one id=\"fpi-config\" block",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "terms/index.html carries exactly one id=\"fpi-config\" block",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "html",
+   "name": "weekly/index.html carries exactly one id=\"fpi-config\" block",
+   "status": "PASS",
+   "evidence": "1"
+  },
+  {
+   "group": "assets",
+   "name": "/assets/img/why-illustration.webp shipped byte-identical to build/assets/img/why-illustration.webp (382x396)",
+   "status": "PASS",
+   "evidence": "{'path': '/assets/img/why-illustration.webp', 'bytes': 50210, 'sha256': '2481a3bdc73ba45d14dc4d66ab717c295431dc6c437efd377bbb9d0dc316af0a', 'type': 'image/webp', 'width': 382, 'height': 396, 'source': 'build/assets/img/why-illustration.webp'}"
+  },
+  {
+   "group": "assets",
+   "name": "/assets/img/why-leaf.webp shipped byte-identical to build/assets/img/why-leaf.webp (71x92)",
+   "status": "PASS",
+   "evidence": "{'path': '/assets/img/why-leaf.webp', 'bytes': 3640, 'sha256': '0de1a53e2a7af8114e25061175ec6f2c5e2108e864122392471c7e694f6c170c', 'type': 'image/webp', 'width': 71, 'height': 92, 'source': 'build/assets/img/why-leaf.webp'}"
+  },
+  {
+   "group": "steve",
+   "name": "RC5 Steve component present in the paired founder grid; sticky notes and question cards absent (owner decision 2026-09-07)",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "steve",
+   "name": "Steve page carries no CPA credential for Steve and no \"Steven\"/nickname (owner instruction); the firm wording is unchanged",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "steve",
+   "name": "illustration and leaf assets referenced with absolute /assets/img/ URLs and explicit dimensions",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "steve",
+   "name": "hidden mobile line breaks keep a real space outside the <br> (pattern. / Intelligence was)",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "steve",
+   "name": "scoped .ms-why rules shipped; dead .sticky rules dropped",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "preview",
+   "name": "standalone preview: exactly one fpi-config block, noindex, NON-PRODUCTION banner, no legacyRoutes (cannot navigate away from the file)",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "preview",
+   "name": "standalone preview is not inside the publish directory",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "seo",
+   "name": "all nine canonicals are distinct",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "seo",
+   "name": "sitemap lists the nine public URLs on the production origin",
+   "status": "PASS",
+   "evidence": "['https://fullplateintel.com/', 'https://fullplateintel.com/weekly/', 'https://fullplateintel.com/show/', 'https://fullplateintel.com/restaurant-intelligence-index/', 'https://fullplateintel.com/benchmark/', 'https://fullplateintel.com/steve/', 'https://fullplateintel.com/privacy/', 'https://fullplateintel.com/terms/', 'https://fullplateintel.com/contact/']"
+  },
+  {
+   "group": "seo",
+   "name": "robots.txt allows crawl, hides /api/ and /subscribe/, names the sitemap",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "seo",
+   "name": "subscribe/thanks/index.html is noindex",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "seo",
+   "name": "subscribe/error/index.html is noindex",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "seo",
+   "name": "404.html is noindex",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "security",
+   "name": "no credential-like strings in shipped files or repository",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "security",
+   "name": ".env.example has names but no secret values (only SITE_ORIGIN and the non-secret KIT_PROVIDER selector carry values)",
+   "status": "PASS",
+   "evidence": "['SITE_ORIGIN=https://fullplateintel.com', 'KIT_PROVIDER=v3-form']"
+  },
+  {
+   "group": "a11y",
+   "name": "body overflow-x:hidden removed from the stylesheet",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "a11y",
+   "name": "reduced-motion rule present",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "fonts",
+   "name": "self-hosted Caveat 500/600/700 and Patrick Hand 400 with OFL licences shipped",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "fonts",
+   "name": "no fonts.googleapis.com references remain",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "contrast",
+   "name": "brand orange #F26A21 text on cream: 2.73:1 (WCAG AA needs 4.5:1)",
+   "status": "INFO",
+   "evidence": "below AA; approved brand token kept unchanged (see AUDIT_AND_FIXES.md B9)"
+  },
+  {
+   "group": "contrast",
+   "name": "brand orange #F26A21 text on the peach card #F6EBDD: 2.60:1 (WCAG AA needs 4.5:1)",
+   "status": "INFO",
+   "evidence": "below AA; approved brand token kept unchanged (see AUDIT_AND_FIXES.md B9)"
+  },
+  {
+   "group": "contrast",
+   "name": "deep orange #D9531E text on cream: 3.59:1 (WCAG AA needs 4.5:1)",
+   "status": "INFO",
+   "evidence": "below AA; approved brand token kept unchanged (see AUDIT_AND_FIXES.md B9)"
+  },
+  {
+   "group": "contrast",
+   "name": "deep orange #D9531E as large text on cream: 3.59:1 (WCAG AA needs 3.0:1)",
+   "status": "PASS",
+   "evidence": "3.59"
+  },
+  {
+   "group": "contrast",
+   "name": "gold #D8A441 text on cream: 2.01:1 (WCAG AA needs 4.5:1)",
+   "status": "INFO",
+   "evidence": "below AA; approved brand token kept unchanged (see AUDIT_AND_FIXES.md B9)"
+  },
+  {
+   "group": "contrast",
+   "name": "white labels on brand-orange buttons #F26A21: 3.06:1 (WCAG AA needs 4.5:1)",
+   "status": "INFO",
+   "evidence": "below AA; approved brand token kept unchanged (see AUDIT_AND_FIXES.md B9)"
+  },
+  {
+   "group": "contrast",
+   "name": "green #355E3B on cream: 6.64:1 (needs 4.5:1)",
+   "status": "PASS",
+   "evidence": "6.64"
+  },
+  {
+   "group": "contrast",
+   "name": "blue #2F6F9F on cream: 4.80:1 (needs 4.5:1)",
+   "status": "PASS",
+   "evidence": "4.80"
+  },
+  {
+   "group": "contrast",
+   "name": "muted ink #4B4A43 on cream: 7.92:1 (needs 4.5:1)",
+   "status": "PASS",
+   "evidence": "7.92"
+  },
+  {
+   "group": "contrast",
+   "name": "ink #1F1F1B on cream: 14.72:1 (needs 4.5:1)",
+   "status": "PASS",
+   "evidence": "14.72"
+  },
+  {
+   "group": "design",
+   "name": "no darkened orange/gold substitutes (#B7420F, #866013, #9C7019, #E9611B) remain in the shipped CSS",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "backend",
+   "name": "v3-form new address: 200 accepted with the uniform body",
+   "status": "PASS",
+   "evidence": "{\"ok\":true,\"status\":\"accepted\",\"message\":\"Thanks. If this address is new to our list, a confirmation email is on its way.\"}"
+  },
+  {
+   "group": "backend",
+   "name": "v3-form: lookup (api_secret) then POST /v3/forms/12345/subscribe",
+   "status": "PASS",
+   "evidence": "['/v3/subscribers', '/v3/forms/12345/subscribe']"
+  },
+  {
+   "group": "backend",
+   "name": "v3-form: api_key, email, fields.source, fields.signup_page (from page), fields.interest, tags [1,3] sent on the single call",
+   "status": "PASS",
+   "evidence": "{'api_key': 'test-v3-key', 'email': 'new@example.com', 'fields': {'source': 'benchmark-page', 'signup_page': '/benchmark/', 'interest': 'benchmark-report'}, 'tags': [1, 3]}"
+  },
+  {
+   "group": "backend",
+   "name": "v3-form: api_secret never appears in a request body and no email in logs",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "backend",
+   "name": "legacy `path` field accepted as the page alias (fragment stripped)",
+   "status": "PASS",
+   "evidence": "{\"api_key\":\"test-v3-key\",\"email\":\"new@example.com\",\"fields\":{\"source\":\"homepage-hero\",\"signup_page\":\"/\",\"interest\":\"newsletter\"},\"tags\":[1]}"
+  },
+  {
+   "group": "backend",
+   "name": "existing active subscriber: 200 generic \"accepted\"; email lower-cased",
+   "status": "PASS",
+   "evidence": "('{\"ok\":true,\"status\":\"accepted\",\"message\":\"Thanks. If this address is new to our list, a confirmation email is on its way.\"}', ['active@example.com', 'active@example.com'])"
+  },
+  {
+   "group": "backend",
+   "name": "public response body is byte-identical for new, active, cancelled and bounced addresses (no enumeration oracle)",
+   "status": "PASS",
+   "evidence": "{'{\"ok\":true,\"status\":\"accepted\",\"message\":\"Thanks. If this address is new to our list, a confirmation email is on its way.\"}'}"
+  },
+  {
+   "group": "backend",
+   "name": "plus-addressed email accepted",
+   "status": "PASS",
+   "evidence": "{\"ok\":true,\"status\":\"accepted\",\"message\":\"Thanks. If this address is new to our list, a confirmation email is on its way.\"}"
+  },
+  {
+   "group": "backend",
+   "name": "invalid email '': 400 invalid_email, no provider call",
+   "status": "PASS",
+   "evidence": "(400, '{\"ok\":false,\"error\":\"invalid_email\",\"message\":\"Please enter a valid email address.\"}')"
+  },
+  {
+   "group": "backend",
+   "name": "invalid email 'not-an-email': 400 invalid_email, no provider call",
+   "status": "PASS",
+   "evidence": "(400, '{\"ok\":false,\"error\":\"invalid_email\",\"message\":\"Please enter a valid email address.\"}')"
+  },
+  {
+   "group": "backend",
+   "name": "invalid email 'a@b': 400 invalid_email, no provider call",
+   "status": "PASS",
+   "evidence": "(400, '{\"ok\":false,\"error\":\"invalid_email\",\"message\":\"Please enter a valid email address.\"}')"
+  },
+  {
+   "group": "backend",
+   "name": "invalid email 'xxxxxxxxxxxxxxxxxxxx': 400 invalid_email, no provider call",
+   "status": "PASS",
+   "evidence": "(400, '{\"ok\":false,\"error\":\"invalid_email\",\"message\":\"Please enter a valid email address.\"}')"
+  },
+  {
+   "group": "backend",
+   "name": "invalid email '<script>@x.com': 400 invalid_email, no provider call",
+   "status": "PASS",
+   "evidence": "(400, '{\"ok\":false,\"error\":\"invalid_email\",\"message\":\"Please enter a valid email address.\"}')"
+  },
+  {
+   "group": "backend",
+   "name": "unknown source/interest/page fall back to website/newsletter//",
+   "status": "PASS",
+   "evidence": "{'rid': '8e31c095', 'event': 'subscribe.result', 'provider': 'v3-form', 'source': 'website', 'interest': 'newsletter', 'page': '/', 'emailHash': '66c8f1f827e515d6', 'attribution': {}, 'tags_requested': 1, 'provider_state': 'inactive', 'internal_state': 'pending', 'interest_recorded': True, 'interest_via': 'form'}"
+  },
+  {
+   "group": "backend",
+   "name": "honeypot filled: 200 fake success, no provider calls",
+   "status": "PASS",
+   "evidence": "{\"ok\":true,\"status\":\"accepted\",\"message\":\"Thanks. If this address is new to our list, a confirmation email is on its way.\"}"
+  },
+  {
+   "group": "backend",
+   "name": "cross-origin POST rejected 403",
+   "status": "PASS",
+   "evidence": "403"
+  },
+  {
+   "group": "backend",
+   "name": "GET rejected 405 (no email ever appears in a query string)",
+   "status": "PASS",
+   "evidence": "405"
+  },
+  {
+   "group": "backend",
+   "name": "unsupported content type rejected 400",
+   "status": "PASS",
+   "evidence": "400"
+  },
+  {
+   "group": "backend",
+   "name": "oversized body rejected 413",
+   "status": "PASS",
+   "evidence": "413"
+  },
+  {
+   "group": "backend",
+   "name": "malformed JSON rejected 400",
+   "status": "PASS",
+   "evidence": "400"
+  },
+  {
+   "group": "backend",
+   "name": "provider 422 rejection: 503 provider_unavailable with Retry-After, generic message, failure logged",
+   "status": "PASS",
+   "evidence": "(503, '{\"ok\":false,\"error\":\"provider_unavailable\",\"message\":\"Signups are temporarily unavailable. Please try again in a few minutes.\"}', {'rid': 'df2fc1d1', 'event': 'subscribe.provider_failure', 'provider': 'v3-form', 'source': 'index-page', 'interest': 'newsletter', 'page': '/', 'emailHash': 'c77086be77e70896', 'attribution': {}, 'tags_requested': 1, 'code': 'provider_error', 'status': 422, 'message': 'provider_error 422'})"
+  },
+  {
+   "group": "backend",
+   "name": "provider 429: 503 provider_unavailable with Retry-After, generic message, failure logged",
+   "status": "PASS",
+   "evidence": "(503, '{\"ok\":false,\"error\":\"provider_unavailable\",\"message\":\"Signups are temporarily unavailable. Please try again in a few minutes.\"}', {'rid': '1f758b38', 'event': 'subscribe.provider_failure', 'provider': 'v3-form', 'source': 'index-page', 'interest': 'newsletter', 'page': '/', 'emailHash': '320161901ad5d614', 'attribution': {}, 'tags_requested': 1, 'code': 'provider_rate_limited', 'status': 429, 'message': 'provider_rate_limited 429'})"
+  },
+  {
+   "group": "backend",
+   "name": "provider non-JSON body: 503 provider_unavailable with Retry-After, generic message, failure logged",
+   "status": "PASS",
+   "evidence": "(503, '{\"ok\":false,\"error\":\"provider_unavailable\",\"message\":\"Signups are temporarily unavailable. Please try again in a few minutes.\"}', {'rid': '88abac59', 'event': 'subscribe.provider_failure', 'provider': 'v3-form', 'source': 'index-page', 'interest': 'newsletter', 'page': '/', 'emailHash': 'e5722def17fd14ca', 'attribution': {}, 'tags_requested': 1, 'code': 'provider_error', 'status': 200, 'message': 'provider_error 200'})"
+  },
+  {
+   "group": "backend",
+   "name": "provider 401 (bad key): 503 provider_unavailable with Retry-After, generic message, failure logged",
+   "status": "PASS",
+   "evidence": "(503, '{\"ok\":false,\"error\":\"provider_unavailable\",\"message\":\"Signups are temporarily unavailable. Please try again in a few minutes.\"}', {'rid': 'a1982e8d', 'event': 'subscribe.provider_failure', 'provider': 'v3-form', 'source': 'index-page', 'interest': 'newsletter', 'page': '/', 'emailHash': '2e98e800030fb1f2', 'attribution': {}, 'tags_requested': 1, 'code': 'provider_auth', 'status': 401, 'message': 'provider_auth 401'})"
+  },
+  {
+   "group": "backend",
+   "name": "provider timeout: 503 after the 4 s per-call bound (4.0s; 9 s total budget), not a hang",
+   "status": "PASS",
+   "evidence": "(503, 4.004339933395386)"
+  },
+  {
+   "group": "backend",
+   "name": "error bodies never contain provider text",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "backend",
+   "name": "per-address rate limit: 6th and 7th attempts in a minute get 429",
+   "status": "PASS",
+   "evidence": "[200, 200, 200, 200, 200, 429, 429]"
+  },
+  {
+   "group": "backend",
+   "name": "timeout is logged as provider_timeout (not a DOMException code)",
+   "status": "PASS",
+   "evidence": "see logs"
+  },
+  {
+   "group": "backend",
+   "name": "form-encoded fallback: 303 to /subscribe/thanks/ with no email in the Location",
+   "status": "PASS",
+   "evidence": "(303, '/subscribe/thanks/')"
+  },
+  {
+   "group": "backend",
+   "name": "form-encoded invalid email: 303 to /subscribe/error/",
+   "status": "PASS",
+   "evidence": "(303, '/subscribe/error/')"
+  },
+  {
+   "group": "backend",
+   "name": "missing credentials: honest 503 not_configured, never fake success",
+   "status": "PASS",
+   "evidence": "(503, '{\"ok\":false,\"error\":\"not_configured\",\"message\":\"Signups are not configured on this deployment.\"}')"
+  },
+  {
+   "group": "backend",
+   "name": "debug /__logs endpoint absent unless ENABLE_DEBUG_ENDPOINTS=1",
+   "status": "PASS",
+   "evidence": "404"
+  },
+  {
+   "group": "backend",
+   "name": "TRUST_XFF unset: forged distinct X-Forwarded-For values still share one limit (429 on the 6th)",
+   "status": "PASS",
+   "evidence": "[503, 503, 503, 503, 503, 429, 429]"
+  },
+  {
+   "group": "backend",
+   "name": "v3-form without KIT_V3_API_SECRET: no lookup, form subscribe only, \"lookup skipped\" logged (suppression then depends on Kit form rules)",
+   "status": "PASS",
+   "evidence": "(['/v3/forms/12345/subscribe'], {'rid': '8c8b1c97', 'event': 'subscribe.result', 'provider': 'v3-form', 'source': 'steve-page', 'interest': 'newsletter', 'page': '/', 'emailHash': 'fe6d4aa01cc1cbc1', 'attribution': {}, 'tags_requested': 0, 'lookup': 'skipped (KIT_V3_API_SECRET not set)', 'provider_state': 'inactive', 'internal_state': 'pending', 'interest_recorded': True, 'interest_via': 'form'})"
+  },
+  {
+   "group": "backend",
+   "name": "v3-form without tag ids or interest field: interest is NOT sent (documented as not recorded), signup still accepted",
+   "status": "PASS",
+   "evidence": "{\"api_key\":\"test-v3-key\",\"email\":\"new@example.com\",\"fields\":{\"source\":\"website\",\"signup_page\":\"/\"}}"
+  },
+  {
+   "group": "backend",
+   "name": "newsletter tag only + benchmark-report: tags [1] sent, 200 accepted, logged interest_recorded=false via=none (RC3 defect closed)",
+   "status": "PASS",
+   "evidence": "{'rid': '860d4661', 'event': 'subscribe.result', 'provider': 'v3-form', 'source': 'benchmark-page', 'interest': 'benchmark-report', 'page': '/', 'emailHash': 'dcb4f36cae737ae5', 'attribution': {}, 'tags_requested': 1, 'lookup': 'skipped (KIT_V3_API_SECRET not set)', 'provider_state': 'inactive', 'internal_state': 'pending', 'interest_recorded': False, 'interest_via': 'none', 'interest_note': 'no Kit mapping for interest \"benchmark-report\" (KIT_TAG_BENCHMARK_REPORT or KIT_V3_INTEREST_FIELD); interest kept in this log only'}"
+  },
+  {
+   "group": "backend",
+   "name": "newsletter interest: accepted form membership logged as interest_recorded=true via=form",
+   "status": "PASS",
+   "evidence": "{'rid': '628ddd54', 'event': 'subscribe.result', 'provider': 'v3-form', 'source': 'homepage-hero', 'interest': 'newsletter', 'page': '/', 'emailHash': 'dcb4f36cae737ae5', 'attribution': {}, 'tags_requested': 1, 'lookup': 'skipped (KIT_V3_API_SECRET not set)', 'provider_state': 'inactive', 'internal_state': 'pending', 'interest_recorded': True, 'interest_via': 'form'}"
+  },
+  {
+   "group": "backend",
+   "name": "full mapping (test.env): benchmark-calculator recorded through its own tag 2, not the generic Benchmark tag 6",
+   "status": "PASS",
+   "evidence": "{'rid': 'f1c97b0e', 'event': 'subscribe.result', 'provider': 'v3-form', 'source': 'benchmark-page', 'interest': 'benchmark-calculator', 'page': '/', 'emailHash': '7753ac2c37ec4f30', 'attribution': {}, 'tags_requested': 2, 'provider_state': 'inactive', 'internal_state': 'pending', 'interest_recorded': True, 'interest_via': 'tag'}"
+  },
+  {
+   "group": "backend",
+   "name": "SIGNUPS_DISABLED=1: JSON submission gets 503 error \"disabled\" with a visible message, no provider call",
+   "status": "PASS",
+   "evidence": "(503, '{\"ok\":false,\"error\":\"disabled\",\"message\":\"Signups are temporarily unavailable. Please try again in a few minutes.\"}')"
+  },
+  {
+   "group": "backend",
+   "name": "SIGNUPS_DISABLED=1: no-JavaScript form post is sent to /subscribe/error/, never /subscribe/thanks/",
+   "status": "PASS",
+   "evidence": "(303, '/subscribe/error/')"
+  },
+  {
+   "group": "core-unit",
+   "name": "tagIdFor: unset -> null; numeric string -> number; whitespace tolerated; non-numeric ignored",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "tagIdsFor: newsletter tag + interest tag, deduplicated, invalid dropped",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "signupsDisabled: 1/true/yes/on enable it; unset/0/false do not",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "no mapping (show): 200 accepted, no tags/field sent, interest_recorded=false, via=none, note names the missing variable",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "no mapping (index): 200 accepted, no tags/field sent, interest_recorded=false, via=none, note names the missing variable",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "no mapping (benchmark): 200 accepted, no tags/field sent, interest_recorded=false, via=none, note names the missing variable",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "no mapping (benchmark-calculator): 200 accepted, no tags/field sent, interest_recorded=false, via=none, note names the missing variable",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "no mapping (benchmark-report): 200 accepted, no tags/field sent, interest_recorded=false, via=none, note names the missing variable",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "newsletter interest, no tags at all: accepted form membership counts, interest_recorded=true via=form",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "newsletter tag only + benchmark-report requested: tags [1] sent, interest_recorded=false (generic tag never counts)",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "generic KIT_TAG_BENCHMARK does not satisfy benchmark-calculator: tags [1] only, interest_recorded=false",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "generic KIT_TAG_BENCHMARK does not satisfy benchmark-report: no tags, interest_recorded=false",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "matching tag (show): tags [1,5] sent, interest_recorded=true via=tag",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "matching tag (index): tags [1,4] sent, interest_recorded=true via=tag",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "matching tag (benchmark): tags [1,6] sent, interest_recorded=true via=tag",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "matching tag (benchmark-calculator): tags [1,2] sent, interest_recorded=true via=tag",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "matching tag (benchmark-report): tags [1,3] sent, interest_recorded=true via=tag",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "calculator and report are distinct: [2] vs [3], both recorded via their own tag",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "invalid tag values (non-numeric): ignored, no tags sent, 200 accepted, interest_recorded=false",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "invalid newsletter tag absent, valid show tag present: tags [5], recorded via=tag",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "KIT_V3_INTEREST_FIELD configured, no tags: fields.interest=index sent, interest_recorded=true via=field",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "field + matching tag: tag reported as the channel ([1,4] sent, via=tag)",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "newsletter with a field configured: field carries \"newsletter\", recorded via=form",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "V3 contract kept: fields.source and fields.signup_page from the legacy path alias",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "suppressed (cancelled) address: uniform 200 accepted, nothing written, interest_recorded not reported",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "provider failure: 503 provider_unavailable, failure logged, interest_recorded not reported",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "SIGNUPS_DISABLED=1, JSON: 503 {ok:false,error:\"disabled\"} with the unavailable message, no provider call, disabled event logged",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "SIGNUPS_DISABLED=true, no-JavaScript form post: 303 to /subscribe/error/ (visible failure, never the thanks page)",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "SIGNUPS_DISABLED=0: signups proceed normally",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "switch applies to the V4 provider too",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "logs carry a keyed hash, the attribution and the interest outcome, but never the address, the keys or provider bodies",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "core-unit",
+   "name": "tests/core_unit_test.mjs exit status 0",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "backend",
+   "name": "v4 (opt-in): lookup -> create(state inactive) -> form -> tags 1,3; 200 accepted",
+   "status": "PASS",
+   "evidence": "['/v4/subscribers', '/v4/subscribers', '/v4/forms/12345/subscribers', '/v4/tags/1/subscribers', '/v4/tags/3/subscribers']"
+  },
+  {
+   "group": "backend",
+   "name": "v4 tag HTTP 500 after a successful form add: still 200 accepted, logged subscribe.partial with tags_ok=false (0.0s)",
+   "status": "PASS",
+   "evidence": "(200, '{\"ok\":true,\"status\":\"accepted\",\"message\":\"Thanks. If this address is new to our list, a confirmation email is on its way.\"}', ['subscribe.config_warning', 'subscribe.partial'])"
+  },
+  {
+   "group": "backend",
+   "name": "v4 tag socket reset (thrown network error) after a successful form add: still 200 accepted, logged subscribe.partial with tags_ok=false (0.0s)",
+   "status": "PASS",
+   "evidence": "(200, '{\"ok\":true,\"status\":\"accepted\",\"message\":\"Thanks. If this address is new to our list, a confirmation email is on its way.\"}', ['subscribe.config_warning', 'subscribe.partial'])"
+  },
+  {
+   "group": "backend",
+   "name": "v4 tag timeout after a successful form add: still 200 accepted, logged subscribe.partial with tags_ok=false (4.0s)",
+   "status": "PASS",
+   "evidence": "(200, '{\"ok\":true,\"status\":\"accepted\",\"message\":\"Thanks. If this address is new to our list, a confirmation email is on its way.\"}', ['subscribe.config_warning', 'subscribe.partial'])"
+  },
+  {
+   "group": "backend",
+   "name": "v4 failure BEFORE acceptance (create 422) is still reported as 503",
+   "status": "PASS",
+   "evidence": "503"
+  },
+  {
+   "group": "backend",
+   "name": "v4 repeat submission makes the same idempotent provider sequence (no extra downstream actions)",
+   "status": "PASS",
+   "evidence": "['/v4/subscribers', '/v4/subscribers', '/v4/forms/12345/subscribers', '/v4/tags/1/subscribers']"
+  },
+  {
+   "group": "netlify-entry",
+   "name": "config exports path /api/subscribe, POST only, and Netlify rateLimit",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "netlify-entry",
+   "name": "valid signup through the Netlify handler: 200 accepted",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "netlify-entry",
+   "name": "Origin equal to the Netlify runtime URL is accepted",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "netlify-entry",
+   "name": "deploy-preview origin rejected unless ALLOW_PREVIEW_ORIGINS=1",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "netlify-entry",
+   "name": "deploy-preview origin accepted with ALLOW_PREVIEW_ORIGINS=1",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "netlify-entry",
+   "name": "look-alike preview origin rejected",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "netlify-entry",
+   "name": "rate limit keyed on context.ip, not on X-Forwarded-For (6th request 429)",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "netlify-entry",
+   "name": "form-encoded fallback: 303 to /subscribe/thanks/",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "netlify-entry",
+   "name": "GET reaching the handler in-process: 405 (config.method is POST-only, so on Netlify a GET is rejected by the platform before the handler; the deployed GET response is a live check, see LAUNCH_RUNBOOK 4.3)",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "netlify-entry",
+   "name": "SIGNUPS_DISABLED=1 through the Netlify entry: 503 error \"disabled\" (visible unavailable message), never apparent acceptance",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "netlify-entry",
+   "name": "SIGNUPS_DISABLED=1, no-JavaScript form post through the Netlify entry: 303 to /subscribe/error/",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "netlify-entry",
+   "name": "switch cleared: signups accepted again (env change needs a redeploy on Netlify; in-process it is immediate)",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "netlify-entry",
+   "name": "tests/netlify_entry_test.mjs exit status 0 (import path ../../server/subscribe-core.mjs resolves from netlify/functions/)",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "fonts",
+   "name": "/ Caveat + Patrick Hand loaded from self-hosted files",
+   "status": "PASS",
+   "evidence": "['Caveat 500', 'Caveat 600', 'Caveat 700', 'Patrick Hand 400']"
+  },
+  {
+   "group": "routing",
+   "name": "/ direct load 200 with page-specific title",
+   "status": "PASS",
+   "evidence": "Full Plate Intelligence | Restaurant Financial Insights for Independent Restaurants"
+  },
+  {
+   "group": "a11y",
+   "name": "/ axe-core 4.10: no serious/critical violations other than colour contrast",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "a11y",
+   "name": "/ axe color-contrast findings on approved brand tokens (accepted deviation, AUDIT_AND_FIXES.md B9)",
+   "status": "INFO",
+   "evidence": "[{'id': 'color-contrast', 'impact': 'serious', 'nodes': 14, 'first': '.nav-item[href$=\"show/\"] > .pill'}]"
+  },
+  {
+   "group": "a11y",
+   "name": "/ heading levels never skip (h1 -> h2 -> h3)",
+   "status": "PASS",
+   "evidence": "[1, 2, 3, 3, 3, 3, 2, 3, 2]"
+  },
+  {
+   "group": "a11y",
+   "name": "/ aria-current on the active nav item",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "forms",
+   "name": "/ header SUBSCRIBE FREE targets an existing signup on this page (#signup)",
+   "status": "PASS",
+   "evidence": "#signup"
+  },
+  {
+   "group": "fonts",
+   "name": "/weekly/ Caveat + Patrick Hand loaded from self-hosted files",
+   "status": "PASS",
+   "evidence": "['Caveat 600', 'Caveat 700', 'Patrick Hand 400']"
+  },
+  {
+   "group": "routing",
+   "name": "/weekly/ direct load 200 with page-specific title",
+   "status": "PASS",
+   "evidence": "Full Plate Weekly | Free Restaurant Financial Newsletter"
+  },
+  {
+   "group": "a11y",
+   "name": "/weekly/ axe-core 4.10: no serious/critical violations other than colour contrast",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "a11y",
+   "name": "/weekly/ axe color-contrast findings on approved brand tokens (accepted deviation, AUDIT_AND_FIXES.md B9)",
+   "status": "INFO",
+   "evidence": "[{'id': 'color-contrast', 'impact': 'serious', 'nodes': 9, 'first': 'a[href$=\"show/\"] > .pill'}]"
+  },
+  {
+   "group": "a11y",
+   "name": "/weekly/ heading levels never skip (h1 -> h2 -> h3)",
+   "status": "PASS",
+   "evidence": "[1, 2, 2, 2, 2]"
+  },
+  {
+   "group": "a11y",
+   "name": "/weekly/ aria-current on the active nav item",
+   "status": "PASS",
+   "evidence": "['/weekly/']"
+  },
+  {
+   "group": "forms",
+   "name": "/weekly/ header SUBSCRIBE FREE targets an existing signup on this page (#weekly-join)",
+   "status": "PASS",
+   "evidence": "#weekly-join"
+  },
+  {
+   "group": "fonts",
+   "name": "/show/ Caveat + Patrick Hand loaded from self-hosted files",
+   "status": "PASS",
+   "evidence": "['Caveat 600', 'Caveat 700', 'Patrick Hand 400']"
+  },
+  {
+   "group": "routing",
+   "name": "/show/ direct load 200 with page-specific title",
+   "status": "PASS",
+   "evidence": "The Full Plate Show | Restaurant Business Conversations"
+  },
+  {
+   "group": "a11y",
+   "name": "/show/ axe-core 4.10: no serious/critical violations other than colour contrast",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "a11y",
+   "name": "/show/ axe color-contrast findings on approved brand tokens (accepted deviation, AUDIT_AND_FIXES.md B9)",
+   "status": "INFO",
+   "evidence": "[{'id': 'color-contrast', 'impact': 'serious', 'nodes': 9, 'first': '.active > .pill'}]"
+  },
+  {
+   "group": "a11y",
+   "name": "/show/ heading levels never skip (h1 -> h2 -> h3)",
+   "status": "PASS",
+   "evidence": "[1, 2, 2, 2]"
+  },
+  {
+   "group": "a11y",
+   "name": "/show/ aria-current on the active nav item",
+   "status": "PASS",
+   "evidence": "['/show/']"
+  },
+  {
+   "group": "forms",
+   "name": "/show/ header SUBSCRIBE FREE targets an existing signup on this page (#show-join)",
+   "status": "PASS",
+   "evidence": "#show-join"
+  },
+  {
+   "group": "fonts",
+   "name": "/restaurant-intelligence-index/ Caveat + Patrick Hand loaded from self-hosted files",
+   "status": "PASS",
+   "evidence": "['Caveat 600', 'Caveat 700', 'Patrick Hand 400']"
+  },
+  {
+   "group": "routing",
+   "name": "/restaurant-intelligence-index/ direct load 200 with page-specific title",
+   "status": "PASS",
+   "evidence": "Restaurant Intelligence Index | Independent Restaurant Industry Report"
+  },
+  {
+   "group": "a11y",
+   "name": "/restaurant-intelligence-index/ axe-core 4.10: no serious/critical violations other than colour contrast",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "a11y",
+   "name": "/restaurant-intelligence-index/ axe color-contrast findings on approved brand tokens (accepted deviation, AUDIT_AND_FIXES.md B9)",
+   "status": "INFO",
+   "evidence": "[{'id': 'color-contrast', 'impact': 'serious', 'nodes': 24, 'first': 'a[href$=\"show/\"] > .pill'}]"
+  },
+  {
+   "group": "a11y",
+   "name": "/restaurant-intelligence-index/ heading levels never skip (h1 -> h2 -> h3)",
+   "status": "PASS",
+   "evidence": "[1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3]"
+  },
+  {
+   "group": "a11y",
+   "name": "/restaurant-intelligence-index/ aria-current on the active nav item",
+   "status": "PASS",
+   "evidence": "['/restaurant-intelligence-index/']"
+  },
+  {
+   "group": "forms",
+   "name": "/restaurant-intelligence-index/ header SUBSCRIBE FREE targets an existing signup on this page (#index-join)",
+   "status": "PASS",
+   "evidence": "#index-join"
+  },
+  {
+   "group": "fonts",
+   "name": "/benchmark/ Caveat + Patrick Hand loaded from self-hosted files",
+   "status": "PASS",
+   "evidence": "['Caveat 600', 'Caveat 700', 'Patrick Hand 400']"
+  },
+  {
+   "group": "routing",
+   "name": "/benchmark/ direct load 200 with page-specific title",
+   "status": "PASS",
+   "evidence": "Full Plate Benchmark | Restaurant Financial Benchmarking"
+  },
+  {
+   "group": "a11y",
+   "name": "/benchmark/ axe-core 4.10: no serious/critical violations other than colour contrast",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "a11y",
+   "name": "/benchmark/ axe color-contrast findings on approved brand tokens (accepted deviation, AUDIT_AND_FIXES.md B9)",
+   "status": "INFO",
+   "evidence": "[{'id': 'color-contrast', 'impact': 'serious', 'nodes': 20, 'first': 'a[href$=\"show/\"] > .pill'}]"
+  },
+  {
+   "group": "a11y",
+   "name": "/benchmark/ heading levels never skip (h1 -> h2 -> h3)",
+   "status": "PASS",
+   "evidence": "[1, 2, 2, 2, 2, 3, 3, 2, 3, 3, 3, 3]"
+  },
+  {
+   "group": "a11y",
+   "name": "/benchmark/ aria-current on the active nav item",
+   "status": "PASS",
+   "evidence": "['/benchmark/']"
+  },
+  {
+   "group": "forms",
+   "name": "/benchmark/ header SUBSCRIBE FREE targets an existing signup on this page (#benchmark-join)",
+   "status": "PASS",
+   "evidence": "#benchmark-join"
+  },
+  {
+   "group": "fonts",
+   "name": "/steve/ Caveat + Patrick Hand loaded from self-hosted files",
+   "status": "PASS",
+   "evidence": "['Caveat 500', 'Caveat 600', 'Caveat 700', 'Patrick Hand 400']"
+  },
+  {
+   "group": "routing",
+   "name": "/steve/ direct load 200 with page-specific title",
+   "status": "PASS",
+   "evidence": "Steve Dillberg | Founder of Full Plate Intelligence"
+  },
+  {
+   "group": "a11y",
+   "name": "/steve/ axe-core 4.10: no serious/critical violations other than colour contrast",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "a11y",
+   "name": "/steve/ axe color-contrast findings on approved brand tokens (accepted deviation, AUDIT_AND_FIXES.md B9)",
+   "status": "INFO",
+   "evidence": "[{'id': 'color-contrast', 'impact': 'serious', 'nodes': 11, 'first': 'a[href$=\"show/\"] > .pill'}]"
+  },
+  {
+   "group": "a11y",
+   "name": "/steve/ heading levels never skip (h1 -> h2 -> h3)",
+   "status": "PASS",
+   "evidence": "[1, 2, 2, 3, 2, 2, 2, 2]"
+  },
+  {
+   "group": "a11y",
+   "name": "/steve/ aria-current on the active nav item",
+   "status": "PASS",
+   "evidence": "['/steve/']"
+  },
+  {
+   "group": "forms",
+   "name": "/steve/ header SUBSCRIBE FREE targets an existing signup on this page (#signup-steve)",
+   "status": "PASS",
+   "evidence": "#signup-steve"
+  },
+  {
+   "group": "fonts",
+   "name": "/privacy/ Caveat + Patrick Hand loaded from self-hosted files",
+   "status": "PASS",
+   "evidence": "['Caveat 500', 'Caveat 600', 'Caveat 700', 'Patrick Hand 400']"
+  },
+  {
+   "group": "routing",
+   "name": "/privacy/ direct load 200 with page-specific title",
+   "status": "PASS",
+   "evidence": "Privacy Policy | Full Plate Intelligence"
+  },
+  {
+   "group": "a11y",
+   "name": "/privacy/ axe-core 4.10: no serious/critical violations other than colour contrast",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "a11y",
+   "name": "/privacy/ axe color-contrast findings on approved brand tokens (accepted deviation, AUDIT_AND_FIXES.md B9)",
+   "status": "INFO",
+   "evidence": "[{'id': 'color-contrast', 'impact': 'serious', 'nodes': 9, 'first': 'a[href$=\"show/\"] > .pill'}]"
+  },
+  {
+   "group": "a11y",
+   "name": "/privacy/ heading levels never skip (h1 -> h2 -> h3)",
+   "status": "PASS",
+   "evidence": "[1, 2, 2, 2, 2, 2, 2, 2, 2]"
+  },
+  {
+   "group": "a11y",
+   "name": "/privacy/ aria-current on the active nav item",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "forms",
+   "name": "/privacy/ header SUBSCRIBE FREE targets an existing signup on this page (/#signup)",
+   "status": "PASS",
+   "evidence": "/#signup"
+  },
+  {
+   "group": "fonts",
+   "name": "/terms/ Caveat + Patrick Hand loaded from self-hosted files",
+   "status": "PASS",
+   "evidence": "['Caveat 500', 'Caveat 600', 'Caveat 700', 'Patrick Hand 400']"
+  },
+  {
+   "group": "routing",
+   "name": "/terms/ direct load 200 with page-specific title",
+   "status": "PASS",
+   "evidence": "Terms of Use | Full Plate Intelligence"
+  },
+  {
+   "group": "a11y",
+   "name": "/terms/ axe-core 4.10: no serious/critical violations other than colour contrast",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "a11y",
+   "name": "/terms/ axe color-contrast findings on approved brand tokens (accepted deviation, AUDIT_AND_FIXES.md B9)",
+   "status": "INFO",
+   "evidence": "[{'id': 'color-contrast', 'impact': 'serious', 'nodes': 7, 'first': 'a[href$=\"show/\"] > .pill'}]"
+  },
+  {
+   "group": "a11y",
+   "name": "/terms/ heading levels never skip (h1 -> h2 -> h3)",
+   "status": "PASS",
+   "evidence": "[1, 2, 2, 2, 2, 2, 2, 2, 2]"
+  },
+  {
+   "group": "a11y",
+   "name": "/terms/ aria-current on the active nav item",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "forms",
+   "name": "/terms/ header SUBSCRIBE FREE targets an existing signup on this page (/#signup)",
+   "status": "PASS",
+   "evidence": "/#signup"
+  },
+  {
+   "group": "fonts",
+   "name": "/contact/ Caveat + Patrick Hand loaded from self-hosted files",
+   "status": "PASS",
+   "evidence": "['Caveat 600', 'Caveat 700', 'Patrick Hand 400']"
+  },
+  {
+   "group": "routing",
+   "name": "/contact/ direct load 200 with page-specific title",
+   "status": "PASS",
+   "evidence": "Contact | Full Plate Intelligence"
+  },
+  {
+   "group": "a11y",
+   "name": "/contact/ axe-core 4.10: no serious/critical violations other than colour contrast",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "a11y",
+   "name": "/contact/ axe color-contrast findings on approved brand tokens (accepted deviation, AUDIT_AND_FIXES.md B9)",
+   "status": "INFO",
+   "evidence": "[{'id': 'color-contrast', 'impact': 'serious', 'nodes': 7, 'first': 'a[href$=\"show/\"] > .pill'}]"
+  },
+  {
+   "group": "a11y",
+   "name": "/contact/ heading levels never skip (h1 -> h2 -> h3)",
+   "status": "PASS",
+   "evidence": "[1]"
+  },
+  {
+   "group": "a11y",
+   "name": "/contact/ aria-current on the active nav item",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "forms",
+   "name": "/contact/ header SUBSCRIBE FREE targets an existing signup on this page (/#signup)",
+   "status": "PASS",
+   "evidence": "/#signup"
+  },
+  {
+   "group": "routing",
+   "name": "unknown route returns HTTP 404 with the branded page",
+   "status": "PASS",
+   "evidence": "404"
+  },
+  {
+   "group": "fonts",
+   "name": "/404.html Caveat + Patrick Hand loaded from self-hosted files",
+   "status": "PASS",
+   "evidence": "['Caveat 600', 'Caveat 700', 'Patrick Hand 400']"
+  },
+  {
+   "group": "routing",
+   "name": "/404.html direct load 200 with page-specific title",
+   "status": "PASS",
+   "evidence": "Page not found | Full Plate Intelligence"
+  },
+  {
+   "group": "a11y",
+   "name": "/404.html axe-core 4.10: no serious/critical violations other than colour contrast",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "a11y",
+   "name": "/404.html axe color-contrast findings on approved brand tokens (accepted deviation, AUDIT_AND_FIXES.md B9)",
+   "status": "INFO",
+   "evidence": "[{'id': 'color-contrast', 'impact': 'serious', 'nodes': 12, 'first': '.nav-item[href$=\"show/\"] > .pill'}]"
+  },
+  {
+   "group": "a11y",
+   "name": "/404.html heading levels never skip (h1 -> h2 -> h3)",
+   "status": "PASS",
+   "evidence": "[1]"
+  },
+  {
+   "group": "a11y",
+   "name": "/404.html aria-current on the active nav item",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "forms",
+   "name": "/404.html header SUBSCRIBE FREE targets an existing signup on this page (/#signup)",
+   "status": "PASS",
+   "evidence": "/#signup"
+  },
+  {
+   "group": "forms",
+   "name": "/ header SUBSCRIBE FREE scrolls this page's own email box into view and focuses it (signup)",
+   "status": "PASS",
+   "evidence": "{'inView': True, 'id': 'signup', 'focusedEmail': True, 'hash': '#signup', 'scrollY': 94}"
+  },
+  {
+   "group": "forms",
+   "name": "/weekly/ header SUBSCRIBE FREE scrolls this page's own email box into view and focuses it (signup-weekly)",
+   "status": "PASS",
+   "evidence": "{'inView': True, 'id': 'signup-weekly', 'focusedEmail': True, 'hash': '#weekly-join', 'scrollY': 631}"
+  },
+  {
+   "group": "forms",
+   "name": "/show/ header SUBSCRIBE FREE scrolls this page's own email box into view and focuses it (signup-show)",
+   "status": "PASS",
+   "evidence": "{'inView': True, 'id': 'signup-show', 'focusedEmail': True, 'hash': '#show-join', 'scrollY': 842}"
+  },
+  {
+   "group": "forms",
+   "name": "/restaurant-intelligence-index/ header SUBSCRIBE FREE scrolls this page's own email box into view and focuses it (signup-index)",
+   "status": "PASS",
+   "evidence": "{'inView': True, 'id': 'signup-index', 'focusedEmail': True, 'hash': '#index-join', 'scrollY': 2650}"
+  },
+  {
+   "group": "forms",
+   "name": "/benchmark/ header SUBSCRIBE FREE scrolls this page's own email box into view and focuses it (signup-benchmark)",
+   "status": "PASS",
+   "evidence": "{'inView': True, 'id': 'signup-benchmark', 'focusedEmail': True, 'hash': '#benchmark-join', 'scrollY': 2879}"
+  },
+  {
+   "group": "forms",
+   "name": "/steve/ header SUBSCRIBE FREE scrolls this page's own email box into view and focuses it (signup-steve)",
+   "status": "PASS",
+   "evidence": "{'inView': True, 'id': 'signup-steve', 'focusedEmail': True, 'hash': '#signup-steve', 'scrollY': 1457}"
+  },
+  {
+   "group": "forms",
+   "name": "/privacy/ header SUBSCRIBE FREE navigates to the homepage form (/#signup)",
+   "status": "PASS",
+   "evidence": "/#signup"
+  },
+  {
+   "group": "forms",
+   "name": "/terms/ header SUBSCRIBE FREE navigates to the homepage form (/#signup)",
+   "status": "PASS",
+   "evidence": "/#signup"
+  },
+  {
+   "group": "forms",
+   "name": "/contact/ header SUBSCRIBE FREE navigates to the homepage form (/#signup)",
+   "status": "PASS",
+   "evidence": "/#signup"
+  },
+  {
+   "group": "security",
+   "name": "no console errors/warnings on any page under the strict CSP",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "design",
+   "name": "primary buttons render brand orange rgb(242,106,33) with white labels, as in the reference file, on home, Benchmark and Index (7 buttons)",
+   "status": "PASS",
+   "evidence": "['rgb(242, 106, 33)|rgb(255, 255, 255)', 'rgb(242, 106, 33)|rgb(255, 255, 255)', 'rgb(242, 106, 33)|rgb(255, 255, 255)', 'rgb(242, 106, 33)|rgb(255, 255, 255)', 'rgb(242, 106, 33)|rgb(255, 255, 255)', 'rgb(242, 106, 33)|rgb(255, 255, 255)', 'rgb(242, 106, 33)|rgb(255, 255, 255)']"
+  },
+  {
+   "group": "security",
+   "name": "CSP, nosniff, frame-ancestors/X-Frame-Options, Referrer-Policy served on HTML",
+   "status": "PASS",
+   "evidence": "['server', 'date', 'content-type', 'content-length', 'last-modified', 'x-content-type-options', 'referrer-policy', 'permissions-policy', 'cross-origin-opener-policy', 'strict-transport-security', 'content-security-policy', 'x-frame-options', 'cache-control']"
+  },
+  {
+   "group": "routing",
+   "name": "legacy #/benchmark migrates to /benchmark/ keeping the query string",
+   "status": "PASS",
+   "evidence": "/benchmark/?utm_source=test"
+  },
+  {
+   "group": "routing",
+   "name": "legacy #/index migrates to /restaurant-intelligence-index/ keeping the query string",
+   "status": "PASS",
+   "evidence": "/restaurant-intelligence-index/?utm_source=test"
+  },
+  {
+   "group": "routing",
+   "name": "legacy #/steve migrates to /steve/ keeping the query string",
+   "status": "PASS",
+   "evidence": "/steve/?utm_source=test"
+  },
+  {
+   "group": "routing",
+   "name": "legacy #/weekly migrates to /weekly/ keeping the query string",
+   "status": "PASS",
+   "evidence": "/weekly/?utm_source=test"
+  },
+  {
+   "group": "routing",
+   "name": "legacy #/privacy migrates to /privacy/ keeping the query string",
+   "status": "PASS",
+   "evidence": "/privacy/?utm_source=test"
+  },
+  {
+   "group": "routing",
+   "name": "plain section anchor (#ecosystem) is preserved, not treated as a route",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "routing",
+   "name": "legacy hash with tracking appended after it (#/index?utm_source=tail) migrates and keeps the tracking",
+   "status": "PASS",
+   "evidence": "http://127.0.0.1:8765/restaurant-intelligence-index/?utm_source=tail"
+  },
+  {
+   "group": "routing",
+   "name": "deep link /benchmark/#benchmark-join lands on the signup block",
+   "status": "PASS",
+   "evidence": "2879"
+  },
+  {
+   "group": "routing",
+   "name": "navigation, back and forward work as real pages",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/ #signup: labelled email input, hidden source/interest/page, honeypot, error+status regions",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/ #signup: has action/method POST fallback",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/ #signup: empty submit shows error with aria-invalid + aria-describedby, no request",
+   "status": "PASS",
+   "evidence": "signup-error signup-help"
+  },
+  {
+   "group": "forms",
+   "name": "/ #signup: malformed email blocked client-side",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/ #signup: success keeps the form element (anchor #signup still in DOM), hides controls, shows status text",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/ #signup: rapid triple click sends exactly one request",
+   "status": "PASS",
+   "evidence": "['http://127.0.0.1:8765/api/subscribe']"
+  },
+  {
+   "group": "forms",
+   "name": "/ #signup: status region has role=status and received focus",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/ #signup: short primary message plus secondary rejoin help",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/ #signup-bottom: labelled email input, hidden source/interest/page, honeypot, error+status regions",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/ #signup-bottom: has action/method POST fallback",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/ #signup-bottom: empty submit shows error with aria-invalid + aria-describedby, no request",
+   "status": "PASS",
+   "evidence": "signup-bottom-error signup-bottom-help"
+  },
+  {
+   "group": "forms",
+   "name": "/ #signup-bottom: malformed email blocked client-side",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/ #signup-bottom: success keeps the form element (anchor #signup-bottom still in DOM), hides controls, shows status text",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/ #signup-bottom: rapid triple click sends exactly one request",
+   "status": "PASS",
+   "evidence": "['http://127.0.0.1:8765/api/subscribe']"
+  },
+  {
+   "group": "forms",
+   "name": "/ #signup-bottom: status region has role=status and received focus",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/ #signup-bottom: short primary message plus secondary rejoin help",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/show/ #signup-show: labelled email input, hidden source/interest/page, honeypot, error+status regions",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/show/ #signup-show: has action/method POST fallback",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/show/ #signup-show: empty submit shows error with aria-invalid + aria-describedby, no request",
+   "status": "PASS",
+   "evidence": "signup-show-error signup-show-help"
+  },
+  {
+   "group": "forms",
+   "name": "/show/ #signup-show: malformed email blocked client-side",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/show/ #signup-show: success keeps the form element (anchor #signup-show still in DOM), hides controls, shows status text",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/show/ #signup-show: rapid triple click sends exactly one request",
+   "status": "PASS",
+   "evidence": "['http://127.0.0.1:8765/api/subscribe']"
+  },
+  {
+   "group": "forms",
+   "name": "/show/ #signup-show: status region has role=status and received focus",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/show/ #signup-show: short primary message plus secondary rejoin help",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/weekly/ #signup-weekly: labelled email input, hidden source/interest/page, honeypot, error+status regions",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/weekly/ #signup-weekly: has action/method POST fallback",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/weekly/ #signup-weekly: empty submit shows error with aria-invalid + aria-describedby, no request",
+   "status": "PASS",
+   "evidence": "signup-weekly-error signup-weekly-help"
+  },
+  {
+   "group": "forms",
+   "name": "/weekly/ #signup-weekly: malformed email blocked client-side",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/weekly/ #signup-weekly: success keeps the form element (anchor #signup-weekly still in DOM), hides controls, shows status text",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/weekly/ #signup-weekly: rapid triple click sends exactly one request",
+   "status": "PASS",
+   "evidence": "['http://127.0.0.1:8765/api/subscribe']"
+  },
+  {
+   "group": "forms",
+   "name": "/weekly/ #signup-weekly: status region has role=status and received focus",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/weekly/ #signup-weekly: short primary message plus secondary rejoin help",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/restaurant-intelligence-index/ #signup-index: labelled email input, hidden source/interest/page, honeypot, error+status regions",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/restaurant-intelligence-index/ #signup-index: has action/method POST fallback",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/restaurant-intelligence-index/ #signup-index: empty submit shows error with aria-invalid + aria-describedby, no request",
+   "status": "PASS",
+   "evidence": "signup-index-error signup-index-help"
+  },
+  {
+   "group": "forms",
+   "name": "/restaurant-intelligence-index/ #signup-index: malformed email blocked client-side",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/restaurant-intelligence-index/ #signup-index: success keeps the form element (anchor #signup-index still in DOM), hides controls, shows status text",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/restaurant-intelligence-index/ #signup-index: rapid triple click sends exactly one request",
+   "status": "PASS",
+   "evidence": "['http://127.0.0.1:8765/api/subscribe']"
+  },
+  {
+   "group": "forms",
+   "name": "/restaurant-intelligence-index/ #signup-index: status region has role=status and received focus",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/restaurant-intelligence-index/ #signup-index: short primary message plus secondary rejoin help",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/benchmark/ #signup-benchmark: labelled email input, hidden source/interest/page, honeypot, error+status regions",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/benchmark/ #signup-benchmark: has action/method POST fallback",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/benchmark/ #signup-benchmark: empty submit shows error with aria-invalid + aria-describedby, no request",
+   "status": "PASS",
+   "evidence": "signup-benchmark-error signup-benchmark-help"
+  },
+  {
+   "group": "forms",
+   "name": "/benchmark/ #signup-benchmark: malformed email blocked client-side",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/benchmark/ #signup-benchmark: success keeps the form element (anchor #signup-benchmark still in DOM), hides controls, shows status text",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/benchmark/ #signup-benchmark: rapid triple click sends exactly one request",
+   "status": "PASS",
+   "evidence": "['http://127.0.0.1:8765/api/subscribe']"
+  },
+  {
+   "group": "forms",
+   "name": "/benchmark/ #signup-benchmark: status region has role=status and received focus",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/benchmark/ #signup-benchmark: short primary message plus secondary rejoin help",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/steve/ #signup-steve: labelled email input, hidden source/interest/page, honeypot, error+status regions",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/steve/ #signup-steve: has action/method POST fallback",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/steve/ #signup-steve: empty submit shows error with aria-invalid + aria-describedby, no request",
+   "status": "PASS",
+   "evidence": "signup-steve-error signup-steve-help"
+  },
+  {
+   "group": "forms",
+   "name": "/steve/ #signup-steve: malformed email blocked client-side",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/steve/ #signup-steve: success keeps the form element (anchor #signup-steve still in DOM), hides controls, shows status text",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/steve/ #signup-steve: rapid triple click sends exactly one request",
+   "status": "PASS",
+   "evidence": "['http://127.0.0.1:8765/api/subscribe']"
+  },
+  {
+   "group": "forms",
+   "name": "/steve/ #signup-steve: status region has role=status and received focus",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "/steve/ #signup-steve: short primary message plus secondary rejoin help",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "Benchmark \"Notify Me About the Calculator\" sets interest=benchmark-calculator before scrolling",
+   "status": "PASS",
+   "evidence": "benchmark-calculator"
+  },
+  {
+   "group": "forms",
+   "name": "Benchmark report button switches the interest to benchmark-report (latest click wins)",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "forms",
+   "name": "submitted Benchmark interest reaches Kit on the form call: tags [1,3] and fields.interest=benchmark-report",
+   "status": "PASS",
+   "evidence": "{'api_key': 'test-v3-key', 'email': 'new7@example.com', 'fields': {'source': 'benchmark-page', 'signup_page': '/benchmark/', 'interest': 'benchmark-report'}, 'tags': [1, 3]}"
+  },
+  {
+   "group": "forms",
+   "name": "client HTTP 500: error shown (Signups are temporarily unavai\u2026), no false success, retry possible",
+   "status": "PASS",
+   "evidence": "Signups are temporarily unavailable. Please try again in a few minutes, or email Steve@FullPlateIntel.com."
+  },
+  {
+   "group": "forms",
+   "name": "client HTTP 429: error shown (Too many attempts\u2026), no false success, retry possible",
+   "status": "PASS",
+   "evidence": "Too many attempts from this connection. Please wait a minute and try again."
+  },
+  {
+   "group": "forms",
+   "name": "client malformed JSON with 200: error shown (Signups are temporarily unavai\u2026), no false success, retry possible",
+   "status": "PASS",
+   "evidence": "Signups are temporarily unavailable. Please try again in a few minutes, or email Steve@FullPlateIntel.com."
+  },
+  {
+   "group": "forms",
+   "name": "client 200 without ok:true: error shown (Signups are temporarily unavai\u2026), no false success, retry possible",
+   "status": "PASS",
+   "evidence": "Signups are temporarily unavailable. Please try again in a few minutes, or email Steve@FullPlateIntel.com."
+  },
+  {
+   "group": "forms",
+   "name": "client network failure: error shown (That did not go through\u2026), no false success, retry possible",
+   "status": "PASS",
+   "evidence": "That did not go through. Please check your connection and try again."
+  },
+  {
+   "group": "forms",
+   "name": "status \"pending_confirmation\" renders its own truthful message",
+   "status": "PASS",
+   "evidence": "Almost there. Check your inbox for a confirmation email and click the link to finish signing up."
+  },
+  {
+   "group": "forms",
+   "name": "status \"subscribed\" renders its own truthful message",
+   "status": "PASS",
+   "evidence": "You are on the list. Full Plate Weekly will arrive when the first issue is ready."
+  },
+  {
+   "group": "forms",
+   "name": "status \"accepted\" renders its own truthful message",
+   "status": "PASS",
+   "evidence": "Thanks. If this address is new to our list, a confirmation email is on its way."
+  },
+  {
+   "group": "forms",
+   "name": "client timeout after 12 s shows the timeout message and re-enables retry",
+   "status": "PASS",
+   "evidence": "That took too long. Please check your connection and try again."
+  },
+  {
+   "group": "forms",
+   "name": "timeout (headers arrive at once, body stalls until the abort): busy state engaged, then form restored within 12 s + 1.5 s (12.2s), timeout message announced, retryable",
+   "status": "PASS",
+   "evidence": "{'err': 'That took too long. Please check your connection and try again.', 'hidden': False, 'disabled': False, 'ro': False, 'done': False, 'busy': None}"
+  },
+  {
+   "group": "forms",
+   "name": "timeout (no headers ever): busy state engaged, then form restored within 12 s + 1.5 s (12.2s), timeout message announced, retryable",
+   "status": "PASS",
+   "evidence": "{'err': 'That took too long. Please check your connection and try again.', 'hidden': False, 'disabled': False, 'ro': False, 'done': False, 'busy': None}"
+  },
+  {
+   "group": "forms",
+   "name": "late 200 after the timeout is ignored (form stays in the timeout state, not \"done\")",
+   "status": "PASS",
+   "evidence": "{'done': False, 'err': 'That took too long. Please check your connection and try again.'}"
+  },
+  {
+   "group": "forms",
+   "name": "retry after a timeout succeeds normally",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "steve",
+   "name": "320px: break hidden and words separated (\"pattern. The\", \"Intelligence was\")",
+   "status": "PASS",
+   "evidence": "('Over the years I noticed a pattern. The same questions kept coming up.', 'Full Plate Intelligence was created to change that.')"
+  },
+  {
+   "group": "steve",
+   "name": "375px: break hidden and words separated (\"pattern. The\", \"Intelligence was\")",
+   "status": "PASS",
+   "evidence": "('Over the years I noticed a pattern. The same questions kept coming up.', 'Full Plate Intelligence was created to change that.')"
+  },
+  {
+   "group": "steve",
+   "name": "390px: break hidden and words separated (\"pattern. The\", \"Intelligence was\")",
+   "status": "PASS",
+   "evidence": "('Over the years I noticed a pattern. The same questions kept coming up.', 'Full Plate Intelligence was created to change that.')"
+  },
+  {
+   "group": "steve",
+   "name": "390px: illustration decoded at natural proportions (200x207 for 382x396)",
+   "status": "PASS",
+   "evidence": "[382, 396, 200, 207, True]"
+  },
+  {
+   "group": "steve",
+   "name": "390px: Founder/Why section height 1448px (paired grid; RC3 sticky-note version was measured separately, see TEST_RESULTS.md)",
+   "status": "INFO",
+   "evidence": "1447.828125"
+  },
+  {
+   "group": "steve",
+   "name": "400px: break hidden and words separated (\"pattern. The\", \"Intelligence was\")",
+   "status": "PASS",
+   "evidence": "('Over the years I noticed a pattern. The same questions kept coming up.', 'Full Plate Intelligence was created to change that.')"
+  },
+  {
+   "group": "steve",
+   "name": "401px: break visible, approved two-line lead and callout kept",
+   "status": "PASS",
+   "evidence": "('Over the years I noticed a pattern.\\nThe same questions kept coming up.', 'Full Plate Intelligence\\nwas created to change that.')"
+  },
+  {
+   "group": "steve",
+   "name": "1280px: break visible, approved two-line lead and callout kept",
+   "status": "PASS",
+   "evidence": "('Over the years I noticed a pattern.\\nThe same questions kept coming up.', 'Full Plate Intelligence\\nwas created to change that.')"
+  },
+  {
+   "group": "steve",
+   "name": "1280px: illustration decoded at natural proportions (172x178 for 382x396)",
+   "status": "PASS",
+   "evidence": "[382, 396, 172, 178, True]"
+  },
+  {
+   "group": "steve",
+   "name": "1280px: Founder/Why section height 618px (paired grid; RC3 sticky-note version was measured separately, see TEST_RESULTS.md)",
+   "status": "INFO",
+   "evidence": "618.328125"
+  },
+  {
+   "group": "analytics",
+   "name": "events emitted: signup_submit then signup_accepted, never containing an email",
+   "status": "PASS",
+   "evidence": "[['signup_submit', {'source': 'homepage-hero', 'interest': 'newsletter'}], ['signup_accepted', {'source': 'homepage-hero', 'interest': 'newsletter', 'status': 'accepted'}]]"
+  },
+  {
+   "group": "analytics",
+   "name": "no third-party requests are made by any page (analytics disabled in config)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "analytics",
+   "name": "first-touch utm kept for the session, gclid and unsafe utm_content dropped, later utm_source not overwriting",
+   "status": "PASS",
+   "evidence": "{'utm_source': 'news', 'utm_medium': 'email', 'utm_campaign': 'launch'}"
+  },
+  {
+   "group": "a11y",
+   "name": "first Tab reaches the skip link",
+   "status": "PASS",
+   "evidence": "skip-link"
+  },
+  {
+   "group": "a11y",
+   "name": "skip link moves focus to <main>",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "a11y",
+   "name": "keyboard-only signup (type + Enter) submits and announces the status",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "a11y",
+   "name": "focus indicator on nav items (computed outline: solid 3px; visible-only when keyboard-focused via :focus-visible)",
+   "status": "INFO",
+   "evidence": "solid 3px"
+  },
+  {
+   "group": "a11y",
+   "name": "prefers-reduced-motion: smooth scrolling disabled",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "nojs",
+   "name": "no-JS: product page renders with content and working nav links",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "nojs",
+   "name": "no-JS: form POSTs and lands on /subscribe/thanks/ with no email in the URL",
+   "status": "PASS",
+   "evidence": "http://127.0.0.1:8765/subscribe/thanks/"
+  },
+  {
+   "group": "nojs",
+   "name": "no-JS: the submission reached the provider (V3 form subscribe)",
+   "status": "PASS",
+   "evidence": ""
+  },
+  {
+   "group": "nojs",
+   "name": "no-JS: legacy #/benchmark link cannot be migrated without script (fragment never reaches the server); homepage shows instead",
+   "status": "INFO",
+   "evidence": "http://127.0.0.1:8765/#/benchmark"
+  },
+  {
+   "group": "design",
+   "name": "/ no image is stretched (rendered aspect within 2% of natural)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "design",
+   "name": "/ page height at 1280: original 2321px (fallback fonts, Google Fonts unreachable here) vs build 2230px",
+   "status": "INFO",
+   "evidence": "-3.9%"
+  },
+  {
+   "group": "design",
+   "name": "/weekly/ no image is stretched (rendered aspect within 2% of natural)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "design",
+   "name": "/weekly/ page height at 1280: original 1561px (fallback fonts, Google Fonts unreachable here) vs build 1531px",
+   "status": "INFO",
+   "evidence": "-1.9%"
+  },
+  {
+   "group": "design",
+   "name": "/show/ no image is stretched (rendered aspect within 2% of natural)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "design",
+   "name": "/show/ page height at 1280: original 1734px (fallback fonts, Google Fonts unreachable here) vs build 1742px",
+   "status": "INFO",
+   "evidence": "+0.5%"
+  },
+  {
+   "group": "design",
+   "name": "/restaurant-intelligence-index/ no image is stretched (rendered aspect within 2% of natural)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "design",
+   "name": "/restaurant-intelligence-index/ page height at 1280: original 3537px (fallback fonts, Google Fonts unreachable here) vs build 3550px",
+   "status": "INFO",
+   "evidence": "+0.4%"
+  },
+  {
+   "group": "design",
+   "name": "/benchmark/ no image is stretched (rendered aspect within 2% of natural)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "design",
+   "name": "/benchmark/ page height at 1280: original 3673px (fallback fonts, Google Fonts unreachable here) vs build 3779px",
+   "status": "INFO",
+   "evidence": "+2.9%"
+  },
+  {
+   "group": "design",
+   "name": "/steve/ no image is stretched (rendered aspect within 2% of natural)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "design",
+   "name": "/steve/ page height at 1280: original 2165px (fallback fonts, Google Fonts unreachable here) vs build 2357px",
+   "status": "INFO",
+   "evidence": "+8.9%"
+  },
+  {
+   "group": "design",
+   "name": "/privacy/ no image is stretched (rendered aspect within 2% of natural)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "design",
+   "name": "/privacy/ page height at 1280: original 1694px (fallback fonts, Google Fonts unreachable here) vs build 2032px (legal text rewritten; not a design lock)",
+   "status": "INFO",
+   "evidence": "+20.0%"
+  },
+  {
+   "group": "design",
+   "name": "/terms/ no image is stretched (rendered aspect within 2% of natural)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "design",
+   "name": "/terms/ page height at 1280: original 1460px (fallback fonts, Google Fonts unreachable here) vs build 1541px (legal text rewritten; not a design lock)",
+   "status": "INFO",
+   "evidence": "+5.5%"
+  },
+  {
+   "group": "design",
+   "name": "/contact/ no image is stretched (rendered aspect within 2% of natural)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "design",
+   "name": "/contact/ page height at 1280: original 900px (fallback fonts, Google Fonts unreachable here) vs build 900px",
+   "status": "INFO",
+   "evidence": "+0.0%"
+  },
+  {
+   "group": "responsive",
+   "name": "/ at 1440px: no horizontal overflow (scrollWidth 1440 <= 1440)",
+   "status": "PASS",
+   "evidence": "(1440, 1440)"
+  },
+  {
+   "group": "responsive",
+   "name": "/ at 1440px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/weekly/ at 1440px: no horizontal overflow (scrollWidth 1440 <= 1440)",
+   "status": "PASS",
+   "evidence": "(1440, 1440)"
+  },
+  {
+   "group": "responsive",
+   "name": "/weekly/ at 1440px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/show/ at 1440px: no horizontal overflow (scrollWidth 1440 <= 1440)",
+   "status": "PASS",
+   "evidence": "(1440, 1440)"
+  },
+  {
+   "group": "responsive",
+   "name": "/show/ at 1440px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/restaurant-intelligence-index/ at 1440px: no horizontal overflow (scrollWidth 1440 <= 1440)",
+   "status": "PASS",
+   "evidence": "(1440, 1440)"
+  },
+  {
+   "group": "responsive",
+   "name": "/restaurant-intelligence-index/ at 1440px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/benchmark/ at 1440px: no horizontal overflow (scrollWidth 1440 <= 1440)",
+   "status": "PASS",
+   "evidence": "(1440, 1440)"
+  },
+  {
+   "group": "responsive",
+   "name": "/benchmark/ at 1440px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/steve/ at 1440px: no horizontal overflow (scrollWidth 1440 <= 1440)",
+   "status": "PASS",
+   "evidence": "(1440, 1440)"
+  },
+  {
+   "group": "responsive",
+   "name": "/steve/ at 1440px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/privacy/ at 1440px: no horizontal overflow (scrollWidth 1440 <= 1440)",
+   "status": "PASS",
+   "evidence": "(1440, 1440)"
+  },
+  {
+   "group": "responsive",
+   "name": "/privacy/ at 1440px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/terms/ at 1440px: no horizontal overflow (scrollWidth 1440 <= 1440)",
+   "status": "PASS",
+   "evidence": "(1440, 1440)"
+  },
+  {
+   "group": "responsive",
+   "name": "/terms/ at 1440px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/contact/ at 1440px: no horizontal overflow (scrollWidth 1440 <= 1440)",
+   "status": "PASS",
+   "evidence": "(1440, 1440)"
+  },
+  {
+   "group": "responsive",
+   "name": "/contact/ at 1440px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/ at 1280px: no horizontal overflow (scrollWidth 1280 <= 1280)",
+   "status": "PASS",
+   "evidence": "(1280, 1280)"
+  },
+  {
+   "group": "responsive",
+   "name": "/ at 1280px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/weekly/ at 1280px: no horizontal overflow (scrollWidth 1280 <= 1280)",
+   "status": "PASS",
+   "evidence": "(1280, 1280)"
+  },
+  {
+   "group": "responsive",
+   "name": "/weekly/ at 1280px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/show/ at 1280px: no horizontal overflow (scrollWidth 1280 <= 1280)",
+   "status": "PASS",
+   "evidence": "(1280, 1280)"
+  },
+  {
+   "group": "responsive",
+   "name": "/show/ at 1280px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/restaurant-intelligence-index/ at 1280px: no horizontal overflow (scrollWidth 1280 <= 1280)",
+   "status": "PASS",
+   "evidence": "(1280, 1280)"
+  },
+  {
+   "group": "responsive",
+   "name": "/restaurant-intelligence-index/ at 1280px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/benchmark/ at 1280px: no horizontal overflow (scrollWidth 1280 <= 1280)",
+   "status": "PASS",
+   "evidence": "(1280, 1280)"
+  },
+  {
+   "group": "responsive",
+   "name": "/benchmark/ at 1280px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/steve/ at 1280px: no horizontal overflow (scrollWidth 1280 <= 1280)",
+   "status": "PASS",
+   "evidence": "(1280, 1280)"
+  },
+  {
+   "group": "responsive",
+   "name": "/steve/ at 1280px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/privacy/ at 1280px: no horizontal overflow (scrollWidth 1280 <= 1280)",
+   "status": "PASS",
+   "evidence": "(1280, 1280)"
+  },
+  {
+   "group": "responsive",
+   "name": "/privacy/ at 1280px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/terms/ at 1280px: no horizontal overflow (scrollWidth 1280 <= 1280)",
+   "status": "PASS",
+   "evidence": "(1280, 1280)"
+  },
+  {
+   "group": "responsive",
+   "name": "/terms/ at 1280px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/contact/ at 1280px: no horizontal overflow (scrollWidth 1280 <= 1280)",
+   "status": "PASS",
+   "evidence": "(1280, 1280)"
+  },
+  {
+   "group": "responsive",
+   "name": "/contact/ at 1280px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/ at 1024px: no horizontal overflow (scrollWidth 1024 <= 1024)",
+   "status": "PASS",
+   "evidence": "(1024, 1024)"
+  },
+  {
+   "group": "responsive",
+   "name": "/ at 1024px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/weekly/ at 1024px: no horizontal overflow (scrollWidth 1024 <= 1024)",
+   "status": "PASS",
+   "evidence": "(1024, 1024)"
+  },
+  {
+   "group": "responsive",
+   "name": "/weekly/ at 1024px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/show/ at 1024px: no horizontal overflow (scrollWidth 1024 <= 1024)",
+   "status": "PASS",
+   "evidence": "(1024, 1024)"
+  },
+  {
+   "group": "responsive",
+   "name": "/show/ at 1024px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/restaurant-intelligence-index/ at 1024px: no horizontal overflow (scrollWidth 1024 <= 1024)",
+   "status": "PASS",
+   "evidence": "(1024, 1024)"
+  },
+  {
+   "group": "responsive",
+   "name": "/restaurant-intelligence-index/ at 1024px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/benchmark/ at 1024px: no horizontal overflow (scrollWidth 1024 <= 1024)",
+   "status": "PASS",
+   "evidence": "(1024, 1024)"
+  },
+  {
+   "group": "responsive",
+   "name": "/benchmark/ at 1024px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/steve/ at 1024px: no horizontal overflow (scrollWidth 1024 <= 1024)",
+   "status": "PASS",
+   "evidence": "(1024, 1024)"
+  },
+  {
+   "group": "responsive",
+   "name": "/steve/ at 1024px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/privacy/ at 1024px: no horizontal overflow (scrollWidth 1024 <= 1024)",
+   "status": "PASS",
+   "evidence": "(1024, 1024)"
+  },
+  {
+   "group": "responsive",
+   "name": "/privacy/ at 1024px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/terms/ at 1024px: no horizontal overflow (scrollWidth 1024 <= 1024)",
+   "status": "PASS",
+   "evidence": "(1024, 1024)"
+  },
+  {
+   "group": "responsive",
+   "name": "/terms/ at 1024px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/contact/ at 1024px: no horizontal overflow (scrollWidth 1024 <= 1024)",
+   "status": "PASS",
+   "evidence": "(1024, 1024)"
+  },
+  {
+   "group": "responsive",
+   "name": "/contact/ at 1024px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/ at 901px: no horizontal overflow (scrollWidth 901 <= 901)",
+   "status": "PASS",
+   "evidence": "(901, 901)"
+  },
+  {
+   "group": "responsive",
+   "name": "/ at 901px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/weekly/ at 901px: no horizontal overflow (scrollWidth 901 <= 901)",
+   "status": "PASS",
+   "evidence": "(901, 901)"
+  },
+  {
+   "group": "responsive",
+   "name": "/weekly/ at 901px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/show/ at 901px: no horizontal overflow (scrollWidth 901 <= 901)",
+   "status": "PASS",
+   "evidence": "(901, 901)"
+  },
+  {
+   "group": "responsive",
+   "name": "/show/ at 901px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/restaurant-intelligence-index/ at 901px: no horizontal overflow (scrollWidth 901 <= 901)",
+   "status": "PASS",
+   "evidence": "(901, 901)"
+  },
+  {
+   "group": "responsive",
+   "name": "/restaurant-intelligence-index/ at 901px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/benchmark/ at 901px: no horizontal overflow (scrollWidth 901 <= 901)",
+   "status": "PASS",
+   "evidence": "(901, 901)"
+  },
+  {
+   "group": "responsive",
+   "name": "/benchmark/ at 901px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/steve/ at 901px: no horizontal overflow (scrollWidth 901 <= 901)",
+   "status": "PASS",
+   "evidence": "(901, 901)"
+  },
+  {
+   "group": "responsive",
+   "name": "/steve/ at 901px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/privacy/ at 901px: no horizontal overflow (scrollWidth 901 <= 901)",
+   "status": "PASS",
+   "evidence": "(901, 901)"
+  },
+  {
+   "group": "responsive",
+   "name": "/privacy/ at 901px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/terms/ at 901px: no horizontal overflow (scrollWidth 901 <= 901)",
+   "status": "PASS",
+   "evidence": "(901, 901)"
+  },
+  {
+   "group": "responsive",
+   "name": "/terms/ at 901px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/contact/ at 901px: no horizontal overflow (scrollWidth 901 <= 901)",
+   "status": "PASS",
+   "evidence": "(901, 901)"
+  },
+  {
+   "group": "responsive",
+   "name": "/contact/ at 901px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/ at 899px: no horizontal overflow (scrollWidth 899 <= 899)",
+   "status": "PASS",
+   "evidence": "(899, 899)"
+  },
+  {
+   "group": "responsive",
+   "name": "/ at 899px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/weekly/ at 899px: no horizontal overflow (scrollWidth 899 <= 899)",
+   "status": "PASS",
+   "evidence": "(899, 899)"
+  },
+  {
+   "group": "responsive",
+   "name": "/weekly/ at 899px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/show/ at 899px: no horizontal overflow (scrollWidth 899 <= 899)",
+   "status": "PASS",
+   "evidence": "(899, 899)"
+  },
+  {
+   "group": "responsive",
+   "name": "/show/ at 899px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/restaurant-intelligence-index/ at 899px: no horizontal overflow (scrollWidth 899 <= 899)",
+   "status": "PASS",
+   "evidence": "(899, 899)"
+  },
+  {
+   "group": "responsive",
+   "name": "/restaurant-intelligence-index/ at 899px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/benchmark/ at 899px: no horizontal overflow (scrollWidth 899 <= 899)",
+   "status": "PASS",
+   "evidence": "(899, 899)"
+  },
+  {
+   "group": "responsive",
+   "name": "/benchmark/ at 899px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/steve/ at 899px: no horizontal overflow (scrollWidth 899 <= 899)",
+   "status": "PASS",
+   "evidence": "(899, 899)"
+  },
+  {
+   "group": "responsive",
+   "name": "/steve/ at 899px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/privacy/ at 899px: no horizontal overflow (scrollWidth 899 <= 899)",
+   "status": "PASS",
+   "evidence": "(899, 899)"
+  },
+  {
+   "group": "responsive",
+   "name": "/privacy/ at 899px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/terms/ at 899px: no horizontal overflow (scrollWidth 899 <= 899)",
+   "status": "PASS",
+   "evidence": "(899, 899)"
+  },
+  {
+   "group": "responsive",
+   "name": "/terms/ at 899px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/contact/ at 899px: no horizontal overflow (scrollWidth 899 <= 899)",
+   "status": "PASS",
+   "evidence": "(899, 899)"
+  },
+  {
+   "group": "responsive",
+   "name": "/contact/ at 899px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/ at 768px: no horizontal overflow (scrollWidth 768 <= 768)",
+   "status": "PASS",
+   "evidence": "(768, 768)"
+  },
+  {
+   "group": "responsive",
+   "name": "/ at 768px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/weekly/ at 768px: no horizontal overflow (scrollWidth 768 <= 768)",
+   "status": "PASS",
+   "evidence": "(768, 768)"
+  },
+  {
+   "group": "responsive",
+   "name": "/weekly/ at 768px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/show/ at 768px: no horizontal overflow (scrollWidth 768 <= 768)",
+   "status": "PASS",
+   "evidence": "(768, 768)"
+  },
+  {
+   "group": "responsive",
+   "name": "/show/ at 768px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/restaurant-intelligence-index/ at 768px: no horizontal overflow (scrollWidth 768 <= 768)",
+   "status": "PASS",
+   "evidence": "(768, 768)"
+  },
+  {
+   "group": "responsive",
+   "name": "/restaurant-intelligence-index/ at 768px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/benchmark/ at 768px: no horizontal overflow (scrollWidth 768 <= 768)",
+   "status": "PASS",
+   "evidence": "(768, 768)"
+  },
+  {
+   "group": "responsive",
+   "name": "/benchmark/ at 768px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/steve/ at 768px: no horizontal overflow (scrollWidth 768 <= 768)",
+   "status": "PASS",
+   "evidence": "(768, 768)"
+  },
+  {
+   "group": "responsive",
+   "name": "/steve/ at 768px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/privacy/ at 768px: no horizontal overflow (scrollWidth 768 <= 768)",
+   "status": "PASS",
+   "evidence": "(768, 768)"
+  },
+  {
+   "group": "responsive",
+   "name": "/privacy/ at 768px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/terms/ at 768px: no horizontal overflow (scrollWidth 768 <= 768)",
+   "status": "PASS",
+   "evidence": "(768, 768)"
+  },
+  {
+   "group": "responsive",
+   "name": "/terms/ at 768px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/contact/ at 768px: no horizontal overflow (scrollWidth 768 <= 768)",
+   "status": "PASS",
+   "evidence": "(768, 768)"
+  },
+  {
+   "group": "responsive",
+   "name": "/contact/ at 768px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/ at 561px: no horizontal overflow (scrollWidth 561 <= 561)",
+   "status": "PASS",
+   "evidence": "(561, 561)"
+  },
+  {
+   "group": "responsive",
+   "name": "/ at 561px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/weekly/ at 561px: no horizontal overflow (scrollWidth 561 <= 561)",
+   "status": "PASS",
+   "evidence": "(561, 561)"
+  },
+  {
+   "group": "responsive",
+   "name": "/weekly/ at 561px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/show/ at 561px: no horizontal overflow (scrollWidth 561 <= 561)",
+   "status": "PASS",
+   "evidence": "(561, 561)"
+  },
+  {
+   "group": "responsive",
+   "name": "/show/ at 561px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/restaurant-intelligence-index/ at 561px: no horizontal overflow (scrollWidth 561 <= 561)",
+   "status": "PASS",
+   "evidence": "(561, 561)"
+  },
+  {
+   "group": "responsive",
+   "name": "/restaurant-intelligence-index/ at 561px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/benchmark/ at 561px: no horizontal overflow (scrollWidth 561 <= 561)",
+   "status": "PASS",
+   "evidence": "(561, 561)"
+  },
+  {
+   "group": "responsive",
+   "name": "/benchmark/ at 561px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/steve/ at 561px: no horizontal overflow (scrollWidth 561 <= 561)",
+   "status": "PASS",
+   "evidence": "(561, 561)"
+  },
+  {
+   "group": "responsive",
+   "name": "/steve/ at 561px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/privacy/ at 561px: no horizontal overflow (scrollWidth 561 <= 561)",
+   "status": "PASS",
+   "evidence": "(561, 561)"
+  },
+  {
+   "group": "responsive",
+   "name": "/privacy/ at 561px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/terms/ at 561px: no horizontal overflow (scrollWidth 561 <= 561)",
+   "status": "PASS",
+   "evidence": "(561, 561)"
+  },
+  {
+   "group": "responsive",
+   "name": "/terms/ at 561px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/contact/ at 561px: no horizontal overflow (scrollWidth 561 <= 561)",
+   "status": "PASS",
+   "evidence": "(561, 561)"
+  },
+  {
+   "group": "responsive",
+   "name": "/contact/ at 561px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/ at 559px: no horizontal overflow (scrollWidth 559 <= 559)",
+   "status": "PASS",
+   "evidence": "(559, 559)"
+  },
+  {
+   "group": "responsive",
+   "name": "/ at 559px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/weekly/ at 559px: no horizontal overflow (scrollWidth 559 <= 559)",
+   "status": "PASS",
+   "evidence": "(559, 559)"
+  },
+  {
+   "group": "responsive",
+   "name": "/weekly/ at 559px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/show/ at 559px: no horizontal overflow (scrollWidth 559 <= 559)",
+   "status": "PASS",
+   "evidence": "(559, 559)"
+  },
+  {
+   "group": "responsive",
+   "name": "/show/ at 559px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/restaurant-intelligence-index/ at 559px: no horizontal overflow (scrollWidth 559 <= 559)",
+   "status": "PASS",
+   "evidence": "(559, 559)"
+  },
+  {
+   "group": "responsive",
+   "name": "/restaurant-intelligence-index/ at 559px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/benchmark/ at 559px: no horizontal overflow (scrollWidth 559 <= 559)",
+   "status": "PASS",
+   "evidence": "(559, 559)"
+  },
+  {
+   "group": "responsive",
+   "name": "/benchmark/ at 559px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/steve/ at 559px: no horizontal overflow (scrollWidth 559 <= 559)",
+   "status": "PASS",
+   "evidence": "(559, 559)"
+  },
+  {
+   "group": "responsive",
+   "name": "/steve/ at 559px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/privacy/ at 559px: no horizontal overflow (scrollWidth 559 <= 559)",
+   "status": "PASS",
+   "evidence": "(559, 559)"
+  },
+  {
+   "group": "responsive",
+   "name": "/privacy/ at 559px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/terms/ at 559px: no horizontal overflow (scrollWidth 559 <= 559)",
+   "status": "PASS",
+   "evidence": "(559, 559)"
+  },
+  {
+   "group": "responsive",
+   "name": "/terms/ at 559px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/contact/ at 559px: no horizontal overflow (scrollWidth 559 <= 559)",
+   "status": "PASS",
+   "evidence": "(559, 559)"
+  },
+  {
+   "group": "responsive",
+   "name": "/contact/ at 559px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/ at 390px: no horizontal overflow (scrollWidth 390 <= 390)",
+   "status": "PASS",
+   "evidence": "(390, 390)"
+  },
+  {
+   "group": "responsive",
+   "name": "/ at 390px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/ at 390px: non-inline interactive targets at least 24px tall (WCAG 2.2 2.5.8; inline text links are exempt)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/weekly/ at 390px: no horizontal overflow (scrollWidth 390 <= 390)",
+   "status": "PASS",
+   "evidence": "(390, 390)"
+  },
+  {
+   "group": "responsive",
+   "name": "/weekly/ at 390px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/weekly/ at 390px: non-inline interactive targets at least 24px tall (WCAG 2.2 2.5.8; inline text links are exempt)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/show/ at 390px: no horizontal overflow (scrollWidth 390 <= 390)",
+   "status": "PASS",
+   "evidence": "(390, 390)"
+  },
+  {
+   "group": "responsive",
+   "name": "/show/ at 390px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/show/ at 390px: non-inline interactive targets at least 24px tall (WCAG 2.2 2.5.8; inline text links are exempt)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/restaurant-intelligence-index/ at 390px: no horizontal overflow (scrollWidth 390 <= 390)",
+   "status": "PASS",
+   "evidence": "(390, 390)"
+  },
+  {
+   "group": "responsive",
+   "name": "/restaurant-intelligence-index/ at 390px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/restaurant-intelligence-index/ at 390px: non-inline interactive targets at least 24px tall (WCAG 2.2 2.5.8; inline text links are exempt)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/benchmark/ at 390px: no horizontal overflow (scrollWidth 390 <= 390)",
+   "status": "PASS",
+   "evidence": "(390, 390)"
+  },
+  {
+   "group": "responsive",
+   "name": "/benchmark/ at 390px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/benchmark/ at 390px: non-inline interactive targets at least 24px tall (WCAG 2.2 2.5.8; inline text links are exempt)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/steve/ at 390px: no horizontal overflow (scrollWidth 390 <= 390)",
+   "status": "PASS",
+   "evidence": "(390, 390)"
+  },
+  {
+   "group": "responsive",
+   "name": "/steve/ at 390px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/steve/ at 390px: non-inline interactive targets at least 24px tall (WCAG 2.2 2.5.8; inline text links are exempt)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/privacy/ at 390px: no horizontal overflow (scrollWidth 390 <= 390)",
+   "status": "PASS",
+   "evidence": "(390, 390)"
+  },
+  {
+   "group": "responsive",
+   "name": "/privacy/ at 390px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/privacy/ at 390px: non-inline interactive targets at least 24px tall (WCAG 2.2 2.5.8; inline text links are exempt)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/terms/ at 390px: no horizontal overflow (scrollWidth 390 <= 390)",
+   "status": "PASS",
+   "evidence": "(390, 390)"
+  },
+  {
+   "group": "responsive",
+   "name": "/terms/ at 390px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/terms/ at 390px: non-inline interactive targets at least 24px tall (WCAG 2.2 2.5.8; inline text links are exempt)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/contact/ at 390px: no horizontal overflow (scrollWidth 390 <= 390)",
+   "status": "PASS",
+   "evidence": "(390, 390)"
+  },
+  {
+   "group": "responsive",
+   "name": "/contact/ at 390px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/contact/ at 390px: non-inline interactive targets at least 24px tall (WCAG 2.2 2.5.8; inline text links are exempt)",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/ at 320px: no horizontal overflow (scrollWidth 320 <= 320)",
+   "status": "PASS",
+   "evidence": "(320, 320)"
+  },
+  {
+   "group": "responsive",
+   "name": "/ at 320px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/weekly/ at 320px: no horizontal overflow (scrollWidth 320 <= 320)",
+   "status": "PASS",
+   "evidence": "(320, 320)"
+  },
+  {
+   "group": "responsive",
+   "name": "/weekly/ at 320px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/show/ at 320px: no horizontal overflow (scrollWidth 320 <= 320)",
+   "status": "PASS",
+   "evidence": "(320, 320)"
+  },
+  {
+   "group": "responsive",
+   "name": "/show/ at 320px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/restaurant-intelligence-index/ at 320px: no horizontal overflow (scrollWidth 320 <= 320)",
+   "status": "PASS",
+   "evidence": "(320, 320)"
+  },
+  {
+   "group": "responsive",
+   "name": "/restaurant-intelligence-index/ at 320px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/benchmark/ at 320px: no horizontal overflow (scrollWidth 320 <= 320)",
+   "status": "PASS",
+   "evidence": "(320, 320)"
+  },
+  {
+   "group": "responsive",
+   "name": "/benchmark/ at 320px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/steve/ at 320px: no horizontal overflow (scrollWidth 320 <= 320)",
+   "status": "PASS",
+   "evidence": "(320, 320)"
+  },
+  {
+   "group": "responsive",
+   "name": "/steve/ at 320px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/privacy/ at 320px: no horizontal overflow (scrollWidth 320 <= 320)",
+   "status": "PASS",
+   "evidence": "(320, 320)"
+  },
+  {
+   "group": "responsive",
+   "name": "/privacy/ at 320px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/terms/ at 320px: no horizontal overflow (scrollWidth 320 <= 320)",
+   "status": "PASS",
+   "evidence": "(320, 320)"
+  },
+  {
+   "group": "responsive",
+   "name": "/terms/ at 320px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "/contact/ at 320px: no horizontal overflow (scrollWidth 320 <= 320)",
+   "status": "PASS",
+   "evidence": "(320, 320)"
+  },
+  {
+   "group": "responsive",
+   "name": "/contact/ at 320px: no element extends past the viewport",
+   "status": "PASS",
+   "evidence": "[]"
+  },
+  {
+   "group": "responsive",
+   "name": "fallback fonts (font files blocked) /steve/ at 901px: no overflow",
+   "status": "PASS",
+   "evidence": "(901, 901, [])"
+  },
+  {
+   "group": "responsive",
+   "name": "fallback fonts (font files blocked) /steve/ at 1024px: no overflow",
+   "status": "PASS",
+   "evidence": "(1024, 1024, [])"
+  },
+  {
+   "group": "responsive",
+   "name": "fallback fonts (font files blocked) /contact/ at 390px: no overflow",
+   "status": "PASS",
+   "evidence": "(390, 390, [])"
+  },
+  {
+   "group": "perf",
+   "name": "/ first load at 390px (mobile, lazy images excluded): 666 KB total, HTML 33 KB, images 347 KB, 23 requests",
+   "status": "INFO",
+   "evidence": "{'/assets/img/sketch-of-a-salmon-dinner-plate-27082eae.webp': 149414, '/assets/css/site.css?v=95d70fa05c': 103359, '/assets/fonts/caveat-latin-600-normal.woff2': 51220, '/assets/fonts/caveat-latin-700-normal.woff2': 51020, '/assets/fonts/caveat-latin-500-normal.woff2': 50904, '/': 34203}"
+  },
+  {
+   "group": "perf",
+   "name": "/weekly/ first load at 390px (mobile, lazy images excluded): 975 KB total, HTML 28 KB, images 711 KB, 30 requests",
+   "status": "INFO",
+   "evidence": "{'/assets/img/illustration-of-a-stack-of-plates-labelled-indus-4fc0a895.webp': 226636, '/assets/css/site.css?v=95d70fa05c': 103359, '/assets/img/the-full-plate-weekly-archive-crate-6479c094.webp': 101630, '/assets/img/hand-drawn-portrait-of-steve-dillberg-a4487b6b.webp': 77676, '/assets/fonts/caveat-latin-600-normal.woff2': 51220, '/assets/fonts/caveat-latin-700-normal.woff2': 51020}"
+  },
+  {
+   "group": "perf",
+   "name": "/show/ first load at 390px (mobile, lazy images excluded): 868 KB total, HTML 28 KB, images 605 KB, 27 requests",
+   "status": "INFO",
+   "evidence": "{'/assets/img/illustration-of-a-vintage-microphone-standing-on-62a4088b.webp': 275566, '/assets/css/site.css?v=95d70fa05c': 103359, '/assets/fonts/caveat-latin-600-normal.woff2': 51220, '/assets/fonts/caveat-latin-700-normal.woff2': 51020, '/assets/img/cta-mic-78146f5f.webp': 29472, '/assets/img/tiktok-2401e839.png': 28731}"
+  },
+  {
+   "group": "perf",
+   "name": "/restaurant-intelligence-index/ first load at 390px (mobile, lazy images excluded): 1683 KB total, HTML 37 KB, images 1411 KB, 28 requests",
+   "status": "INFO",
+   "evidence": "{'/assets/img/a-silver-cloche-lifted-from-a-plate-to-reveal-th-fbf301a4.webp': 683420, '/assets/img/hand-drawn-independent-restaurant-storefront-f43b3955.webp': 287852, '/assets/css/site.css?v=95d70fa05c': 103359, '/assets/img/the-restaurant-intelligence-index-report-cover-d-bdeb78c8.webp': 93426, '/assets/fonts/caveat-latin-600-normal.woff2': 51220, '/assets/fonts/caveat-latin-700-normal.woff2': 51020}"
+  },
+  {
+   "group": "perf",
+   "name": "/benchmark/ first load at 390px (mobile, lazy images excluded): 953 KB total, HTML 44 KB, images 673 KB, 23 requests",
+   "status": "INFO",
+   "evidence": "{'/assets/img/img-22-ff5db9ed.webp': 214836, '/assets/img/img-24-ffb84ef8.webp': 123656, '/assets/img/img-25-64e634c2.webp': 105644, '/assets/css/site.css?v=95d70fa05c': 103359, '/assets/fonts/caveat-latin-600-normal.woff2': 51220, '/assets/fonts/caveat-latin-700-normal.woff2': 51020}"
+  },
+  {
+   "group": "perf",
+   "name": "/steve/ first load at 390px (mobile, lazy images excluded): 634 KB total, HTML 30 KB, images 319 KB, 23 requests",
+   "status": "INFO",
+   "evidence": "{'/assets/css/site.css?v=95d70fa05c': 103359, '/assets/img/hand-drawn-portrait-of-steve-dillberg-3-6a71dbaf.webp': 68654, '/assets/fonts/caveat-latin-600-normal.woff2': 51220, '/assets/fonts/caveat-latin-700-normal.woff2': 51020, '/assets/fonts/caveat-latin-500-normal.woff2': 50904, '/assets/img/why-illustration.webp': 50210}"
+  },
+  {
+   "group": "perf",
+   "name": "/privacy/ first load at 390px (mobile, lazy images excluded): 465 KB total, HTML 25 KB, images 154 KB, 16 requests",
+   "status": "INFO",
+   "evidence": "{'/assets/css/site.css?v=95d70fa05c': 103359, '/assets/fonts/caveat-latin-600-normal.woff2': 51220, '/assets/fonts/caveat-latin-700-normal.woff2': 51020, '/assets/fonts/caveat-latin-500-normal.woff2': 50904, '/assets/img/tiktok-2401e839.png': 28731, '/assets/img/instagram-d1b4ed96.png': 28369}"
+  },
+  {
+   "group": "perf",
+   "name": "/terms/ first load at 390px (mobile, lazy images excluded): 463 KB total, HTML 23 KB, images 154 KB, 16 requests",
+   "status": "INFO",
+   "evidence": "{'/assets/css/site.css?v=95d70fa05c': 103359, '/assets/fonts/caveat-latin-600-normal.woff2': 51220, '/assets/fonts/caveat-latin-700-normal.woff2': 51020, '/assets/fonts/caveat-latin-500-normal.woff2': 50904, '/assets/img/tiktok-2401e839.png': 28731, '/assets/img/instagram-d1b4ed96.png': 28369}"
+  },
+  {
+   "group": "perf",
+   "name": "/contact/ first load at 390px (mobile, lazy images excluded): 411 KB total, HTML 21 KB, images 154 KB, 15 requests",
+   "status": "INFO",
+   "evidence": "{'/assets/css/site.css?v=95d70fa05c': 103359, '/assets/fonts/caveat-latin-600-normal.woff2': 51220, '/assets/fonts/caveat-latin-700-normal.woff2': 51020, '/assets/img/tiktok-2401e839.png': 28731, '/assets/img/instagram-d1b4ed96.png': 28369, '/assets/img/linkedin-d22e5855.png': 26329}"
+  }
+ ]
+}
