@@ -31,3 +31,16 @@
 @media (max-width:400px){
   .ms-why-br{display:none;}
 }
+/* Full Plate Show mobile title fix */
+@media (max-width: 560px) {
+  #page-show .show-copy .pg-title {
+    font-size: 30px !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+    letter-spacing: -0.02em;
+  }
+
+  #page-show .show-copy .pg-title .title-spark {
+    display: none !important;
+  }
+}
