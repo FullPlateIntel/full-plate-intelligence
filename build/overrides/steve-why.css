@@ -31,16 +31,37 @@
 @media (max-width:400px){
   .ms-why-br{display:none;}
 }
-/* Full Plate Show mobile title fix */
+/* Full Plate Show mobile hero title */
 @media (max-width: 560px) {
   #page-show .show-copy .pg-title {
-    font-size: 30px !important;
-    line-height: 1 !important;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    font-size: 41px !important;
+    line-height: 1.03 !important;
     white-space: nowrap !important;
-    letter-spacing: -0.02em;
+    letter-spacing: normal;
+    overflow: visible;
   }
 
-  #page-show .show-copy .pg-title .title-spark {
-    display: none !important;
+  #page-show .show-copy .pg-title > .title-spark {
+    display: block !important;
+    position: absolute;
+    width: 22px;
+    height: 18px;
+    top: 7px;
+  }
+
+  #page-show .show-copy .pg-title > .title-spark:not(.flip) {
+    left: -21px;
+  }
+
+  #page-show .show-copy .pg-title > .title-spark.flip {
+    right: -21px;
+  }
+
+  #page-show .show-copy .pg-swoosh {
+    width: 82%;
   }
 }
