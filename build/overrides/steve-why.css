@@ -1,0 +1,67 @@
+/* ---- Steve: "Why I Started" component (scoped to .ms-why; lives in the original right-hand founder-grid column) ---- */
+.ms-why .ms-h{line-height:1.05;}
+.founder-grid .ms-why-lead{font-family:'Caveat',cursive;font-size:28px;font-weight:700;line-height:1.15;margin:0 0 18px;}
+.ms-why-row{display:grid;grid-template-columns:minmax(0,1fr) 172px;gap:18px;align-items:start;}
+.ms-why-sub{font-family:'Caveat',cursive;font-size:30px;font-weight:700;line-height:1.1;margin:0 0 10px;}
+.ms-why-art{width:100%;height:auto;display:block;margin:-6px 0 0;}
+.founder-grid .ms-why-callout{
+  position:relative;margin:4px 0 16px;padding:14px 18px 15px 52px;
+  font-family:'Caveat',cursive;font-size:32px;font-weight:700;line-height:1.08;
+  background:#FBEFE3;border:1.6px solid var(--orange);border-radius:13px 8px 12px 7px / 8px 12px 7px 13px;
+}
+.ms-why-callout .fpi-accent{position:absolute;left:16px;top:18px;width:26px;height:22px;}
+.ms-why-close{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:end;}
+.founder-grid .ms-why-close p{margin-bottom:0;}
+.ms-why-strong{color:var(--orange);font-weight:700;padding-bottom:4px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 16' preserveAspectRatio='none'%3E%3Cpath d='M6 8C70 3 180 10 250 6c30-2 50-1 64 3' fill='none' stroke='%231F1F1B' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat bottom left / 100% 5px;}
+.founder-grid .ms-why-motto{font-family:'Caveat',cursive;font-size:16px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;line-height:1.3;color:var(--fpi-muted-ink);text-align:center;padding-bottom:4px;border-bottom:1.4px solid rgba(31,31,27,.45);}
+.ms-why-motto img{display:block;width:30px;height:auto;margin:0 auto 2px;}
+@media (max-width:900px){
+  .founder-grid .ms-why-lead{font-size:28px;}
+  .ms-why-row{grid-template-columns:minmax(0,1fr) 200px;gap:24px;}
+  .ms-why-sub{font-size:30px;}
+}
+@media (max-width:560px){
+  .founder-grid .ms-why-lead{font-size:26px;}
+  .ms-why-row{grid-template-columns:minmax(0,1fr);gap:10px;}
+  .ms-why-art{max-width:200px;margin:0 auto 6px;}
+  .founder-grid .ms-why-callout{font-size:27px;}
+  .ms-why-close{grid-template-columns:minmax(0,1fr);}
+  .founder-grid .ms-why-motto{justify-self:end;}
+}
+@media (max-width:400px){
+  .ms-why-br{display:none;}
+}
+/* Full Plate Show mobile hero title */
+@media (max-width: 560px) {
+  #page-show .show-copy .pg-title {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    font-size: 41px !important;
+    line-height: 1.03 !important;
+    white-space: nowrap !important;
+    letter-spacing: normal;
+    overflow: visible;
+  }
+
+  #page-show .show-copy .pg-title > .title-spark {
+    display: block !important;
+    position: absolute;
+    width: 22px;
+    height: 18px;
+    top: 7px;
+  }
+
+  #page-show .show-copy .pg-title > .title-spark:not(.flip) {
+    left: -21px;
+  }
+
+  #page-show .show-copy .pg-title > .title-spark.flip {
+    right: -21px;
+  }
+
+  #page-show .show-copy .pg-swoosh {
+    width: 82%;
+  }
+}

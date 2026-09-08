@@ -1,0 +1,31 @@
+{
+  "_comment": "Launch-state configuration for FPI_SUBSCRIBER_LAUNCH_RC1. Every value marked CONFIRM must be verified by the owner before the production build (see docs/LAUNCH_RUNBOOK.md). The build refuses localhost/staging origins.",
+  "origin": "https://fullplateintel.com",
+  "origin_status": "CONFIRM: canonical host inferred from the Steve@FullPlateIntel.com contact address; www vs apex and the live domain must be confirmed before deploy",
+  "brand": "Full Plate Intelligence",
+  "operator_legal_name": null,
+  "operator_legal_name_status": "CONFIRM: the legal entity that operates the website and newsletter is not stated anywhere in the approved build",
+  "contact_email": "Steve@FullPlateIntel.com",
+  "launch": {
+    "weekly": "coming_soon",
+    "show": "coming_soon",
+    "index": "coming_soon",
+    "benchmark": "coming_soon"
+  },
+  "launch_notes": "weekly may be set to 'live' only once the Kit confirmation + welcome workflow has been verified with a real test address (runbook step 6).",
+  "subscribe_endpoint": "/api/subscribe",
+  "analytics": {
+    "provider": null,
+    "measurement_id": null,
+    "_comment": "null = no analytics loaded. Set provider to 'ga4' and a real measurement_id only after the privacy policy section on analytics is switched on."
+  },
+  "social": {
+    "instagram": "https://instagram.com/fullplateintel",
+    "linkedin": "https://www.linkedin.com/company/fullplateintel",
+    "tiktok": "https://www.tiktok.com/@fullplateintel",
+    "_status": "CONFIRM: carried over from the approved build; profiles not verified as live"
+  },
+  "sdc_url": null,
+  "sdc_url_status": "CONFIRM: no verified Schofer Dillberg & Company URL was supplied, so no link is rendered",
+  "policy_revision_date": "September 6, 2026"
+}

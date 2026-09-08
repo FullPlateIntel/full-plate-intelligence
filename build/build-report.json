@@ -1,0 +1,502 @@
+{
+ "build_time": "2026-09-07T17:44:25Z",
+ "origin": "https://fullplateintel.com",
+ "launch": {
+  "weekly": "coming_soon",
+  "show": "coming_soon",
+  "index": "coming_soon",
+  "benchmark": "coming_soon"
+ },
+ "pages": {
+  "home": {
+   "path": "/",
+   "title": "Full Plate Intelligence | Restaurant Financial Insights for Independent Restaurants",
+   "description": "Full Plate Intelligence (Full Plate Intel) helps independent restaurant owners see their numbers the way top operators do: a free weekly newsletter on food cost, labor, cash flow and profitability, with restaurant research and benchmarking tools on the way.",
+   "og_image": "/assets/share/og-home.png"
+  },
+  "weekly": {
+   "path": "/weekly/",
+   "title": "Full Plate Weekly | Free Restaurant Financial Newsletter",
+   "description": "Full Plate Weekly is a free restaurant newsletter with practical financial insights for independent owners: food cost, labor cost, cash flow, occupancy and profitability, in one short email a week.",
+   "og_image": "/assets/share/og-weekly.png"
+  },
+  "show": {
+   "path": "/show/",
+   "title": "The Full Plate Show | Restaurant Business Conversations",
+   "description": "The Full Plate Show is an upcoming restaurant podcast: practical conversations with owners, chefs, investors, lenders and technologists about the decisions that shape a restaurant business.",
+   "og_image": "/assets/share/og-show.png"
+  },
+  "index": {
+   "path": "/restaurant-intelligence-index/",
+   "title": "Restaurant Intelligence Index | Independent Restaurant Industry Report",
+   "description": "The Restaurant Intelligence Index is a planned twice-yearly restaurant industry report built from independent restaurant data: sales and profitability, food and beverage costs, labor and productivity, operator sentiment and technology. Paid per edition.",
+   "og_image": "/assets/share/og-index.png"
+  },
+  "benchmark": {
+   "path": "/benchmark/",
+   "title": "Full Plate Benchmark | Restaurant Financial Benchmarking",
+   "description": "Full Plate Benchmark is a planned restaurant benchmarking tool: compare food cost, labor, prime cost and profitability against restaurants like yours by concept, cuisine, revenue and market. Paid Quick Calculator and Full Benchmark Report.",
+   "og_image": "/assets/share/og-benchmark.png"
+  },
+  "steve": {
+   "path": "/steve/",
+   "title": "Steve Dillberg | Founder of Full Plate Intelligence",
+   "description": "Meet Steve Dillberg, restaurant accountant and advisor, founder of Full Plate Intelligence and founding partner of Schofer Dillberg & Company, with more than 25 years advising restaurant owners and operators.",
+   "og_image": "/assets/share/og-steve.png"
+  },
+  "privacy": {
+   "path": "/privacy/",
+   "title": "Privacy Policy | Full Plate Intelligence",
+   "description": "How Full Plate Intelligence collects and uses your email address and what happens when you join the Full Plate Weekly list.",
+   "og_image": "/assets/share/og-home.png"
+  },
+  "terms": {
+   "path": "/terms/",
+   "title": "Terms of Use | Full Plate Intelligence",
+   "description": "Terms of use for the Full Plate Intelligence website and Full Plate Weekly newsletter.",
+   "og_image": "/assets/share/og-home.png"
+  },
+  "contact": {
+   "path": "/contact/",
+   "title": "Contact | Full Plate Intelligence",
+   "description": "Questions, feedback or ideas for Full Plate Intelligence? Email Steve directly.",
+   "og_image": "/assets/share/og-home.png"
+  }
+ },
+ "legacy_routes": {
+  "#/show": "/show/",
+  "#/weekly": "/weekly/",
+  "#/index": "/restaurant-intelligence-index/",
+  "#/benchmark": "/benchmark/",
+  "#/steve": "/steve/",
+  "#/privacy": "/privacy/",
+  "#/terms": "/terms/",
+  "#/contact": "/contact/",
+  "#/home": "/"
+ },
+ "copy_changes": [
+  {
+   "page": "home",
+   "original": "Join restaurant owners and operators.",
+   "replacement": "For independent restaurant owners.",
+   "reason": "Prelaunch: nobody has joined yet, so the note now states who the newsletter is for instead of implying an existing audience.",
+   "approval": null
+  },
+  {
+   "page": "home",
+   "original": "<p class=\"micro\">Free forever. One email a week. No fluff.</p>",
+   "replacement": "<p class=\"micro\" id=\"signup-help\">Free. Confirm your email and you are on the list; Full Plate Weekly starts sending when the first issue is ready. One short email a week, no fluff.</p>",
+   "reason": "States the immediate value and what happens after signup (confirmation email, then the newsletter), driven by the launch-state configuration.",
+   "approval": null
+  },
+  {
+   "page": "home",
+   "original": "<span><b>PROFIT</b>What's left to grow your business</span>",
+   "replacement": "<span><b>PROFIT</b>What remains after these costs</span>",
+   "reason": "Profit is not automatically cash available to grow the business; neutral wording per the restaurant-finance credibility review.",
+   "approval": null
+  },
+  {
+   "page": "home",
+   "original": "      Turn numbers into <span>better decisions.</span></p>",
+   "replacement": "      Turn numbers into <span>better decisions.</span></p>\n    <p class=\"plate-disclaimer\">Illustrative example, not an industry benchmark. Actual costs and profit vary. Percentages are shares of sales using simplified categories.</p>",
+   "reason": "Visible qualifier for the illustrative cost breakdown (percentages total 100% but are not a sourced benchmark).",
+   "approval": null
+  },
+  {
+   "page": "home",
+   "original": "<p>Upload your numbers. Instantly benchmark against similar restaurants by revenue, concept, and location. See where you stand and where to improve.</p>",
+   "replacement": "<p>Compare your numbers with similar restaurants by revenue, concept, and location. See where you stand and where to improve. Paid tools, in development.</p>",
+   "reason": "Removes the \"instantly\" claim for an unbuilt tool and states that Benchmark tools will be paid.",
+   "approval": null
+  },
+  {
+   "page": "home",
+   "original": "<p>A twice-yearly snapshot of key financial metrics, cost trends, and operator sentiment across independent restaurants, so you can see where the industry stands.</p>",
+   "replacement": "<p>A twice-yearly snapshot of key financial metrics, cost trends, and operator sentiment across independent restaurants, so you can see where the industry stands. Paid, per edition.</p>",
+   "reason": "States the commercial model of the Index on the homepage card.",
+   "approval": null
+  },
+  {
+   "page": "home",
+   "original": "<h3>Trusted by restaurant owners because:</h3>",
+   "replacement": "<h3>Built for restaurant owners:</h3>",
+   "reason": "No subscribers or clients of Full Plate Intelligence exist yet to substantiate \"trusted by\"; keeps the section without fabricated social proof.",
+   "approval": null
+  },
+  {
+   "page": "home",
+   "original": "<span>We're in your corner: operators helping operators.</span>",
+   "replacement": "<span>We're in your corner: restaurant-focused advice, built around operators.</span>",
+   "reason": "Replaces \"operators helping operators\" with supported language (advisory background, not operating experience).",
+   "approval": "Steve to confirm whether he has direct restaurant-operating experience; if so the original line can return."
+  },
+  {
+   "page": "home",
+   "original": "<span>Your data is protected and never sold.</span>",
+   "replacement": "<span>Your information is protected and never sold.</span>",
+   "reason": "Only an email address is collected in this release; wording no longer implies financial-data handling.",
+   "approval": null
+  },
+  {
+   "page": "show",
+   "original": "<p class=\"body\">Every episode is a sit-down with owners, chefs, operators, investors, lenders, technologists, and the specialists they lean on.</p>",
+   "replacement": "<p class=\"body\">Each episode will be a sit-down with owners, chefs, operators, investors, lenders, technologists, and the specialists they lean on.</p>",
+   "reason": "Future tense: no episodes have been published.",
+   "approval": null
+  },
+  {
+   "page": "show",
+   "original": "<p class=\"body\">Every conversation ends with something you can <u>act on</u>, not just something to think about.</p>",
+   "replacement": "<p class=\"body\">Every conversation will end with something you can <u>act on</u>, not just something to think about.</p>",
+   "reason": "Future tense: no episodes have been published.",
+   "approval": null
+  },
+  {
+   "page": "index",
+   "original": "Real operating data from independent restaurants, read by someone who has run them.",
+   "replacement": "Real operating data from independent restaurants, interpreted through more than 25 years of advising restaurant owners and operators.",
+   "reason": "The supported biography is advisory (CPA and advisor), not restaurant operation.",
+   "approval": "Steve to confirm whether he has run a restaurant; if so \"read by someone who has run them\" may return."
+  },
+  {
+   "page": "index",
+   "original": "<p class=\"paid-note\"><span class=\"pill\">PAID REPORT</span> Purchased per edition. Early-access subscribers hear first.</p>",
+   "replacement": "<p class=\"paid-note\"><span class=\"pill\">PAID REPORT</span> Purchased per edition when published. The early-access list gets launch updates first.</p>",
+   "reason": "Clarifies that the report is bought separately and that the list only provides updates.",
+   "approval": null
+  },
+  {
+   "page": "index",
+   "original": "<button class=\"rii-btn rii-btn-primary\" type=\"button\" data-scroll=\"index-join\">GET EARLY ACCESS</button>",
+   "replacement": "<button class=\"rii-btn rii-btn-primary\" type=\"button\" data-scroll=\"index-join\" data-interest=\"index\">JOIN THE EARLY-ACCESS LIST</button>",
+   "reason": "Truthful CTA: signing up joins a list; it does not grant report access.",
+   "approval": null
+  },
+  {
+   "page": "index",
+   "original": "<p class=\"rii-micro\">A paid report, published twice a year for independent restaurant operators. Early access opens through the list below.</p>",
+   "replacement": "<p class=\"rii-micro\">A paid report, published twice a year for independent restaurant operators. Join the list below for launch updates.</p>",
+   "reason": "Separates list membership from purchase.",
+   "approval": null
+  },
+  {
+   "page": "index",
+   "original": "<p class=\"rii-lead\">Each edition follows the same structure, so you can track what has moved from one report to the next.</p>",
+   "replacement": "<p class=\"rii-lead\">Each edition will follow the same structure, so you can track what has moved from one report to the next.</p>",
+   "reason": "Future tense for an unpublished report.",
+   "approval": null
+  },
+  {
+   "page": "index",
+   "original": "<p class=\"rii-lead\">A disciplined research line: real operating data goes in, individual restaurants stay protected, and experience turns the patterns into something you can use.</p>",
+   "replacement": "<p class=\"rii-lead\">The planned research line: real operating data goes in, individual restaurants stay protected, and experience turns the patterns into something you can use.</p>",
+   "reason": "Describes the intended process explicitly as planned.",
+   "approval": null
+  },
+  {
+   "page": "index",
+   "original": "<h3>Anonymized</h3><p>Identifiers are removed. No individual restaurant is ever named or recognizable.</p>",
+   "replacement": "<h3>Anonymized</h3><p>Identifiers are removed before analysis. No individual restaurant is named, and results are reported only in aggregate.</p>",
+   "reason": "Replaces an absolute guarantee (\"never recognizable\") with the concrete safeguards intended.",
+   "approval": "Owner/legal: confirm the anonymization and aggregation standard before data collection opens."
+  },
+  {
+   "page": "index",
+   "original": "<p>The Index reports patterns across many restaurants, never the position of any one of them. Contributed data is used only to build the Index.</p>",
+   "replacement": "<p>The Index will report patterns across many restaurants, not the position of any one of them. How contributed data may be used, including any use across other Full Plate Intelligence products, will be set out in the participation terms before any data is collected.</p>",
+   "reason": "The \"used only to build the Index\" promise conflicts with possible cross-product use (Benchmark); consent scope must be decided, not silently broadened.",
+   "approval": "Steve/legal: decide the permitted uses of contributed data and whether SDC client information may ever be included."
+  },
+  {
+   "page": "index",
+   "original": "<h2>Intelligence Index coming soon.",
+   "replacement": "<h2>Intelligence Index coming soon.",
+   "reason": "Unchanged (listed for completeness).",
+   "approval": null
+  },
+  {
+   "page": "index",
+   "original": "<br>Get <span class=\"free\">early access</span> through Full Plate Weekly.</h2>",
+   "replacement": "<br>Join the <span class=\"free\">early-access list</span> through Full Plate Weekly.</h2>",
+   "reason": "Signup joins a list; it does not grant access to a report.",
+   "approval": null
+  },
+  {
+   "page": "index",
+   "original": "<button class=\"rii-btn rii-btn-primary\" type=\"submit\">GET EARLY ACCESS</button>",
+   "replacement": "<button class=\"rii-btn rii-btn-primary\" type=\"submit\">GET LAUNCH UPDATES</button>",
+   "reason": "Truthful CTA label.",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "Full Plate Benchmark matches your restaurant with the right peers and turns your numbers into <u>actions</u>.",
+   "replacement": "Full Plate Benchmark is being built to match your restaurant with the right peers and turn your numbers into <u>actions</u>.",
+   "reason": "Prelaunch: the tool does not exist yet.",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "Both the Quick Calculator and the Full Benchmark Report are paid tools.",
+   "replacement": "Both the Quick Calculator and the Full Benchmark Report will be paid tools.",
+   "reason": "Future tense; prices are not set.",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "<li>Get an instant performance snapshot</li>",
+   "replacement": "<li>Get a quick performance snapshot</li>",
+   "reason": "No verified real-time output exists.",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "<li>No sign-up required</li>",
+   "replacement": "<li>Built for a fast first look</li>",
+   "reason": "Misleading next to a paid tag and an email-signup action.",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "<button class=\"bm-btn bm-btn-quiet\" type=\"button\" data-scroll=\"benchmark-join\">Try the Calculator</button>",
+   "replacement": "<button class=\"bm-btn bm-btn-quiet\" type=\"button\" data-scroll=\"benchmark-join\" data-interest=\"benchmark-calculator\">Notify Me About the Calculator</button>",
+   "reason": "The control scrolls to a signup form; label now says so. Interest is captured before scrolling.",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "<button class=\"bm-btn bm-btn-primary\" type=\"button\" data-scroll=\"benchmark-join\">Get Your Benchmark Report</button>",
+   "replacement": "<button class=\"bm-btn bm-btn-primary\" type=\"button\" data-scroll=\"benchmark-join\" data-interest=\"benchmark-report\">Notify Me About the Benchmark Report</button>",
+   "reason": "Same as above for the report.",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "<h2 class=\"bm-h2\">How Full Plate Benchmark works</h2>",
+   "replacement": "<h2 class=\"bm-h2\">How Full Plate Benchmark will work</h2>",
+   "reason": "Planned functionality stated explicitly.",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "<p>Our AI maps your chart of accounts to our standard framework.</p>",
+   "replacement": "<p>Your chart of accounts will be mapped to our standard framework, with a review step before anything is scored.</p>",
+   "reason": "Removes a present-tense AI claim that cannot be verified.",
+   "approval": "Steve to confirm the intended mapping method (automated, reviewed, or both)."
+  },
+  {
+   "page": "benchmark",
+   "original": "<p>AI-powered insights and operator actions you can implement today.</p>",
+   "replacement": "<p>Clear insights and operator actions you can put to work.</p>",
+   "reason": "Removes an unsupported present-tense AI claim.",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "<h2 class=\"bm-h2\">Your data is safe</h2>",
+   "replacement": "<h2 class=\"bm-h2\">How your data will be protected</h2>",
+   "reason": "Planned safeguards, not a present guarantee; uploads are not open.",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "<p class=\"bm-safe-note\">Secure. Anonymized. Never shared.</p>",
+   "replacement": "<p class=\"bm-safe-note\">Planned safeguards. Financial uploads are not open yet.</p>",
+   "reason": "States the prelaunch fact plainly.",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "<p>Upload your P&amp;L and chart of accounts through our secure portal.</p>",
+   "replacement": "<p>You will upload your P&amp;L and chart of accounts through an encrypted portal, once Benchmark opens.</p>",
+   "reason": "Future tense; no portal exists.",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "<p>Your data is encrypted using bank-level protocols during transmission.</p>",
+   "replacement": "<p>Data will be encrypted in transit (TLS) and at rest.</p>",
+   "reason": "\"Bank-level\" is unsubstantiated marketing language; concrete, checkable wording instead.",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "<p>We remove identifiers and sensitive data so your identity is never known.</p>",
+   "replacement": "<p>Identifying details will be separated from your financial data before analysis.</p>",
+   "reason": "Replaces an absolute claim with the intended safeguard.",
+   "approval": "Owner/legal: confirm the de-identification standard."
+  },
+  {
+   "page": "benchmark",
+   "original": "<p>Your data is combined with thousands of other restaurants to create powerful insights.</p>",
+   "replacement": "<p>Peer comparisons will be built from aggregated data across participating restaurants, not from any single restaurant.</p>",
+   "reason": "No dataset of \"thousands\" exists.",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "<p>You receive benchmarks and scores built on anonymous, aggregate comparisons.</p>",
+   "replacement": "<p>You will receive benchmarks and scores built on aggregate comparisons.</p>",
+   "reason": "Future tense.",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "<p>Your individual data is never sold, shared, or used for any other purpose.</p>",
+   "replacement": "<p>Your individual data will not be sold. Permitted uses, including any contribution to aggregate research, will be stated in the participation terms you accept before uploading.</p>",
+   "reason": "Absolute \"never shared / any other purpose\" conflicts with aggregate use; consent scope to be decided.",
+   "approval": "Steve/legal: define permitted uses of uploaded financial data."
+  },
+  {
+   "page": "benchmark",
+   "original": "<li>Private</li><li>Secure</li><li>Anonymized</li><li>Aggregated</li><li>Never shared</li>",
+   "replacement": "<li>Private</li><li>Encrypted</li><li>De-identified</li><li>Aggregated</li><li>Not sold</li>",
+   "reason": "Matches the revised safeguards.",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "<br>Get <span class=\"free\">early access</span> through Full Plate Weekly.</h2>",
+   "replacement": "<br>Get <span class=\"free\">launch updates</span> through Full Plate Weekly.</h2>",
+   "reason": "Signup provides updates, not access.",
+   "approval": null
+  },
+  {
+   "page": "steve",
+   "original": "<h2>Join restaurant owners who rely on <span class=\"free\">Full Plate Weekly</span>",
+   "replacement": "<h2>Join <span class=\"free\">Full Plate Weekly</span> for practical restaurant financial insights.",
+   "reason": "No one relies on an unpublished newsletter; prospective wording.",
+   "approval": null
+  },
+  {
+   "page": "steve",
+   "original": "<br>for actionable insights every week.</h2>",
+   "replacement": "<br>Free to subscribe.</h2>",
+   "reason": "Completes the prospective CTA.",
+   "approval": null
+  },
+  {
+   "page": "steve",
+   "original": "<p class=\"ms-tag\">Every restaurant has a story.<br><span class=\"ms-tag-u\">The numbers simply tell it.</span></p>",
+   "replacement": "<p class=\"ms-identity\">Steve Dillberg. Founder of Full Plate Intelligence and founding partner of Schofer Dillberg &amp; Company.</p>\n        <p class=\"ms-tag\">Every restaurant has a story.<br><span class=\"ms-tag-u\">The numbers simply tell it.</span></p>",
+   "reason": "Visible founder identity line in real text for discoverability (name and both roles). RC5: owner instruction 2026-09-07: no \"Steven\", no quoted nickname, no CPA credential (Steve is not a CPA).",
+   "approval": null
+  },
+  {
+   "page": "index",
+   "original": "<p class=\"paid-note\"><span class=\"pill\">PAID REPORT</span> Purchased per edition when published. The early-access list gets launch updates first.</p>",
+   "replacement": "<p class=\"paid-note\"><span class=\"pill\">PREMIUM RESEARCH REPORT</span> Available for individual purchase with each twice-yearly edition. Join the early-access list for launch details and first access.</p>",
+   "reason": "Owner wording: the pill describes the product, not the checkout process.",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "<p class=\"paid-note\"><span class=\"pill\">PAID PRODUCT</span> Both the Quick Calculator and the Full Benchmark Report will be paid tools.</p>",
+   "replacement": "<p class=\"paid-note\"><span class=\"pill\">BENCHMARKING MEMBERSHIP</span> Paid, per-location benchmarking with options ranging from a quick performance snapshot to ongoing monthly reporting. Join the early-access list for launch details and founding-member access.</p>",
+   "reason": "Owner wording: the pill describes the product, not the checkout process.",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "<p class=\"bm-product-sub\">A fast gut-check. <span class=\"pill\">PAID</span></p>",
+   "replacement": "<p class=\"bm-product-sub\">A fast gut-check. <span class=\"pill\">BENCHMARKING MEMBERSHIP</span></p>",
+   "reason": "Owner wording (product-card pill).",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "<p class=\"bm-product-sub\">In-depth analysis. Action-oriented insight. <span class=\"pill\">PAID</span></p>",
+   "replacement": "<p class=\"bm-product-sub\">In-depth analysis. Action-oriented insight. <span class=\"pill\">BENCHMARKING MEMBERSHIP</span></p>",
+   "reason": "Owner wording (product-card pill).",
+   "approval": null
+  },
+  {
+   "page": "index",
+   "original": "<p>Every edition combines restaurant operating data with more than 25 years of experience working alongside restaurant owners and operators.</p>",
+   "replacement": "<p>Every edition will combine restaurant operating data with more than 25 years of experience working alongside restaurant owners and operators.</p>",
+   "reason": "Future tense for an unpublished report.",
+   "approval": null
+  },
+  {
+   "page": "index",
+   "original": "Each edition shows what is changing across the industry, why it matters, and what deserves your attention next.",
+   "replacement": "Each edition will show what is changing across the industry, why it matters, and what deserves your attention next.",
+   "reason": "Future tense for an unpublished report.",
+   "approval": null
+  },
+  {
+   "page": "index",
+   "original": "<h2>Numbers, not anecdotes</h2><p>Built from the operating data of independent restaurants, so you see what the industry is actually doing.</p>",
+   "replacement": "<h2>Numbers, not anecdotes</h2><p>To be built from the operating data of independent restaurants, so you see what the industry is actually doing.</p>",
+   "reason": "Planned functionality stated explicitly.",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "<p>Our model goes beyond averages to show what actually drives performance.</p>",
+   "replacement": "<p>Our model is designed to go beyond averages and show what actually drives performance.</p>",
+   "reason": "Present-tense claim about an unbuilt model.",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "<h3>Never Shared</h3>",
+   "replacement": "<h3>Not Sold</h3>",
+   "reason": "Heading matched the removed absolute guarantee; aligned with the revised body text.",
+   "approval": null
+  },
+  {
+   "page": "benchmark",
+   "original": "<h3>You own your data. <span class=\"bm-own-accent\">We protect it.</span></h3>",
+   "replacement": "<h3>You own your data. <span class=\"bm-own-accent\">We will protect it.</span></h3>",
+   "reason": "Planned safeguard, not a present guarantee.",
+   "approval": null
+  },
+  {
+   "page": "weekly",
+   "original": "Straight talk. Real numbers. Actionable insights you can use right now to build a stronger restaurant.",
+   "replacement": "Straight talk. Real numbers. Actionable insights you can use to build a stronger restaurant.",
+   "reason": "\"Right now\" implies the newsletter is already sending.",
+   "approval": null
+  },
+  {
+   "page": "weekly",
+   "original": "<p>Every issue is written with one goal: help you make <u>better decisions</u>.</p>",
+   "replacement": "<p>Every issue will be written with one goal: help you make <u>better decisions</u>.</p>",
+   "reason": "Future tense for an unpublished newsletter.",
+   "approval": null
+  },
+  {
+   "page": "home",
+   "original": "<span>Your information is protected and never sold.</span>",
+   "replacement": "<span>Your information is protected and not sold.</span>",
+   "reason": "Matches the privacy policy wording (\"do not sell\") without an absolute \"never\".",
+   "approval": null
+  },
+  {
+   "page": "steve",
+   "original": "section <!-- ================= FOUNDER / WHY ================= --> .. <!-- ================= THREE COLUMNS ================= -->",
+   "replacement": "build/overrides/steve-founder-why.html",
+   "reason": "Owner-approved RC4_3 Steve component (see docs/CHANGELOG_RC5.md).",
+   "approval": null
+  }
+ ],
+ "inline_style_classes": 14,
+ "css_url": "/assets/css/site.css?v=95d70fa05c",
+ "js_url": "/assets/js/site.js?v=fd2ba6cd96",
+ "html_bytes": {
+  "404.html": 21215,
+  "index.html": 34203,
+  "subscribe/error/index.html": 21201,
+  "subscribe/thanks/index.html": 20947,
+  "benchmark/index.html": 45077,
+  "weekly/index.html": 28973,
+  "steve/index.html": 30428,
+  "restaurant-intelligence-index/index.html": 37500,
+  "contact/index.html": 21538,
+  "terms/index.html": 23686,
+  "show/index.html": 28405,
+  "privacy/index.html": 25777
+ }
+}

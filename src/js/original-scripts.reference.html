@@ -1,0 +1,160 @@
+
+
+<script>
+  // Real signup submission via the site's serverless endpoint (/api/subscribe),
+  // which securely forwards subscribers to Kit. The success message is only
+  // shown after Kit has accepted the subscriber (or they're already subscribed).
+  (function(){
+    var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    document.querySelectorAll('form.signup').forEach(function(form){
+      var input = form.querySelector('input');
+      var btn = form.querySelector('button');
+      var msg = null;
+
+      function showError(text){
+        input.classList.add('oops');
+        if(!msg){
+          msg = document.createElement('p');
+          msg.className = 'signup-msg';
+          msg.setAttribute('role','alert');
+          form.insertAdjacentElement('afterend', msg);
+        }
+        msg.textContent = text;
+      }
+      function clearError(){
+        input.classList.remove('oops');
+        if(msg){ msg.remove(); msg = null; }
+      }
+      function setBusy(busy){
+        form.dataset.busy = busy ? '1' : '';
+        btn.disabled = busy;
+        input.disabled = busy;
+        if(busy){
+          btn.dataset.label = btn.textContent;
+          btn.textContent = 'SIGNING YOU UP…';
+          form.setAttribute('aria-busy','true');
+        } else {
+          if(btn.dataset.label) btn.textContent = btn.dataset.label;
+          form.removeAttribute('aria-busy');
+        }
+      }
+
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        if(form.dataset.busy === '1') return; // prevent double submission
+        var email = input.value.trim();
+        if(!EMAIL_RE.test(email)){
+          showError('Please enter a valid email address.');
+          input.focus();
+          return;
+        }
+        clearError();
+        setBusy(true);
+
+        fetch('/api/subscribe', {
+          method: 'POST',
+          headers: {'Content-Type':'application/json'},
+          body: JSON.stringify({
+            email: email,
+            source: form.dataset.source || 'website',
+            path: location.pathname + location.hash
+          })
+        }).then(function(res){
+          return res.json().catch(function(){ return {}; }).then(function(data){
+            if(res.ok && data.ok){
+              clearError();
+              var p = document.createElement('p');
+              p.className = 'thanks';
+              p.textContent = "You're in! Full Plate Weekly is headed to your inbox.";
+              form.replaceWith(p);
+            } else if(res.status === 400 && data.error === 'invalid_email'){
+              setBusy(false);
+              showError('Please enter a valid email address.');
+              input.focus();
+            } else {
+              setBusy(false);
+              showError("Hmm, that didn't go through. Please try again in a moment.");
+            }
+          });
+        }).catch(function(){
+          setBusy(false);
+          showError("Hmm, that didn't go through. Please check your connection and try again.");
+        });
+      });
+
+      input.addEventListener('input', clearError);
+    });
+  })();
+</script>
+
+<script>
+document.querySelectorAll('.iconnav .nav-item:not(.nav-plain)').forEach(function(a){
+  a.addEventListener('click', function(){
+    document.querySelectorAll('.iconnav .nav-item.active').forEach(function(b){b.classList.remove('active');});
+    a.classList.add('active');
+  });
+});
+</script>
+
+<script>
+(function(){
+  var pages={
+    home:document.getElementById('page-home'),
+    show:document.getElementById('page-show'),
+    weekly:document.getElementById('page-weekly'),
+    index:document.getElementById('page-index'),
+    benchmark:document.getElementById('page-benchmark'),
+    steve:document.getElementById('page-steve'),
+    privacy:document.getElementById('page-privacy'),
+    terms:document.getElementById('page-terms'),
+    contact:document.getElementById('page-contact')
+  };
+  var routes={'#/show':'show','#/weekly':'weekly','#/index':'index','#/benchmark':'benchmark','#/steve':'steve','#/privacy':'privacy','#/terms':'terms','#/contact':'contact'};
+  // pages that have a matching item in the header nav
+  var navRoutes={show:'#/show',weekly:'#/weekly',index:'#/index',benchmark:'#/benchmark',steve:'#/steve'};
+  function navFor(page){
+    var href=navRoutes[page];
+    return href ? document.querySelector('.iconnav .nav-item[href="'+href+'"]') : null;
+  }
+  function setActive(el){
+    document.querySelectorAll('.iconnav .nav-item.active').forEach(function(b){b.classList.remove('active');});
+    if(el) el.classList.add('active');
+  }
+  function show(name){
+    Object.keys(pages).forEach(function(k){ if(pages[k]) pages[k].hidden=(k!==name); });
+  }
+  function route(){
+    var hash=location.hash;
+    var page=routes[hash];
+    if(page){
+      show(page);
+      setActive(navFor(page));
+      window.scrollTo(0,0);
+    } else {
+      show('home');
+      setActive(null);
+      if(hash && hash!=='#/home'){
+        var el=null;
+        try{ el=document.querySelector(hash); }catch(e){}
+        if(el){ el.scrollIntoView(); } else { window.scrollTo(0,0); }
+      } else { window.scrollTo(0,0); }
+    }
+  }
+  window.addEventListener('hashchange', route);
+  route();
+})();
+</script>
+
+<script>
+// In-page "notify me" buttons scroll to that page's signup block.
+// Deliberately not anchor links: changing location.hash would trigger the router.
+document.querySelectorAll('[data-scroll]').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var target=document.getElementById(btn.getAttribute('data-scroll'));
+    if(!target) return;
+    target.scrollIntoView({behavior:'smooth',block:'center'});
+    var input=target.querySelector('input');
+    if(input) setTimeout(function(){ input.focus({preventScroll:true}); }, 500);
+  });
+});
+</script>
