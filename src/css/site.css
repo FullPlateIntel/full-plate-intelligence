@@ -629,7 +629,7 @@ footer{padding:20px 0 22px;}
   #page-show .bottom-cta h2{font-size:30px;}
 }
 @media (max-width:560px){
-  .show-copy .pg-title{font-size:41px;}
+  .show-copy .pg-title{font-size:38px;}
   .icon-row{grid-template-columns:repeat(2,minmax(0,1fr));}
   .show-scene{max-width:min(360px,100%);}
   .cta-mic{height:96px;}
