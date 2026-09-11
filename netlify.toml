@@ -3,7 +3,7 @@
 # `make build`), not the repository root. The repository root (build scripts, tests, mock Kit, docs) is never published.
 
 [build]
-  command = "python3 build/extract.py && python3 build/build.py"
+  command = "python3 build/extract.py && python3 build/build.py && python3 build/apply_brand_favicon_html.py"
   publish = "dist"
 
 [build.environment]
