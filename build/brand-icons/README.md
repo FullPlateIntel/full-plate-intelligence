@@ -1,10 +1,8 @@
-# Brand icons (favicon fix 2026-09-11)
+# Brand favicon assets
 
-Fork + plate + knife mark for favicon / apple-touch (replaces plate-only ORIGINAL favicon).
-Source: Nina favicon-v2 from live `#fpi-logo-plate` geometry.
+Source: Steve Dillberg attached hand-drawn fork + plate + knife mark (white background, orange center), 2026-09-11.
 
-- `*.png.b64` — base64 of PNG deliverables (decoded at build time)
-- `fpi-logo-plate-favicon.svg` — master SVG
-- See `ASSETS.md` for sizes and notes
+Decoded at build time by `build/brand_favicon.py` and applied to HTML by `build/apply_brand_favicon_html.py`.
 
-build/build.py writes `/assets/img/favicon-brand.png` and `/assets/img/apple-touch-icon.png` into dist and points `<link rel="icon">` / apple-touch at them.
+Primary browser icon: `favicon-48.png.b64` → `/assets/img/favicon-brand.png`
+Apple touch: `apple-touch-icon-180.png.b64` → `/assets/img/apple-touch-icon.png`
