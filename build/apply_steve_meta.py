@@ -24,11 +24,12 @@ STEVE_HTML = DIST / "steve" / "index.html"
 
 
 def replace_attr(html: str, attr: str, value: str) -> str:
+    # Replace content="..." for a given attribute name occurrence patterns used in head
     patterns = [
         rf'(<meta\s+name="{re.escape(attr)}"\s+content=")([^"]*)(")',
         rf'(<meta\s+property="{re.escape(attr)}"\s+content=")([^"]*)(")',
-        rf"(<meta\s+name=\"{re.escape(attr)}\"\s+content=')([^']*)(')",
-        rf"(<meta\s+property=\"{re.escape(attr)}\"\s+content=')([^']*)(')",
+        rf'(<meta\s+name="{re.escape(attr)}"\s+content=\')([^\']*)(\')',
+        rf'(<meta\s+property="{re.escape(attr)}"\s+content=\')([^\']*)(\')',
     ]
     out = html
     for pat in patterns:
@@ -46,6 +47,9 @@ def replace_title(html: str, title: str) -> str:
 
 
 def patch_json_ld(html: str, title: str, desc: str) -> str:
+    """Best-effort: update ProfilePage name/description in ld+json if present."""
+    # Keep surgical — only replace the known old description string if present,
+    # and ensure title appears in ld+json name fields for the webpage.
     old = (
         "Meet Steve Dillberg, restaurant accountant and advisor, founder of Full Plate "
         "Intelligence and founding partner of Schofer Dillberg & Company, with more than "
@@ -53,6 +57,7 @@ def patch_json_ld(html: str, title: str, desc: str) -> str:
     )
     if old in html:
         html = html.replace(old, desc)
+    # Also replace if a prior proposed short line is present
     short = (
         "Meet Steve Dillberg, founder of Full Plate Intelligence and founding partner "
         "of Schofer Dillberg & Company, a boutique CPA firm."
@@ -68,12 +73,14 @@ def main() -> int:
         return 0
     html = STEVE_HTML.read_text(encoding="utf-8")
     html = replace_title(html, TITLE)
+    # meta description + og/twitter (build uses description from PAGES into these)
     for attr in ("description", "og:description", "twitter:description"):
         html = replace_attr(html, attr, DESC)
     for attr in ("og:title", "twitter:title"):
         html = replace_attr(html, attr, TITLE)
     html = patch_json_ld(html, TITLE, DESC)
     if "restaurant accountant" in html.lower():
+        # Fail closed if personal mislabel remains in head-ish content
         head = html.split("</head>", 1)[0]
         if "restaurant accountant" in head.lower():
             raise SystemExit("restaurant accountant still present in <head> after patch")
